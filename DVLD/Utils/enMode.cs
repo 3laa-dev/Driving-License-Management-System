@@ -1,0 +1,1 @@
+﻿internal enum enMode { AddNew , Update }
