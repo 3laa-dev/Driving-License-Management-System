@@ -16,13 +16,14 @@ namespace DVLD
         public ctrlPersonCardWithFilter()
         {
             InitializeComponent();
-            
+            this.person = null;
+
         }
         public Person person { set; get; }
 
         private void ctrlPersonCard1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void ctrlPersonCardWithFilter_Load(object sender, EventArgs e)

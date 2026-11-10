@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -58,6 +59,38 @@ namespace DVLDDataAccessLayer
                 conn.Close();
             }
             return id;
+        }
+
+        public static bool IsPersonRegisteredForLocalDrivingLicenseApplication(int PersonID) { 
+            SqlConnection conn = new SqlConnection(DatabaseSettings.ConnectionString);
+
+            string query = @"SELECT Found = 1 FROM Applications
+                            INNER JOIN LocalDrivingLicenseApplications
+                            ON Applications.ApplicationID = LocalDrivingLicenseApplications.ApplicationID
+                            WHERE Applications.ApplicationStatus != 2 AND  Applications.ApplicationPersonID = @PersonID";
+
+            SqlCommand command = new SqlCommand( query, conn );
+
+            command.Parameters.AddWithValue("@PersonID", PersonID);
+
+            bool isFound;
+            try
+            {
+                conn.Open();
+
+                object Value = command.ExecuteScalar();
+
+                isFound = Value != null;
+
+            }
+            catch (Exception ex)
+            {
+                isFound = false;
+            }
+            finally { 
+                conn.Close ();
+            }
+            return isFound;
         }
     }
 }
