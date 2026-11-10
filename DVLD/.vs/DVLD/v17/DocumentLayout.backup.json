@@ -3,14 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50A3DB85-FBFF-41B2-B598-05A18881A6BC}|..\\DVLDConsoleForTest\\DVLDConsoleForTest.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvldconsolefortest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alaa\\source\\repos\\DVLDDataAccessLayer\\ApplicationsData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88CEB1E4-11BA-4B70-83EE-064EE7E1E6AB}|..\\DVLDBusinessLayer\\DVLDBusinessLayer.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvldbusinesslayer\\clslocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alaa\\source\\repos\\DVLDDataAccessLayer\\LocalDrivingLicenseApplicationsData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{095773CD-7B64-4E0C-A033-9217578A167B}|..\\DVLDDataAccessLayer\\DVLDDataAccessLayer.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvlddataaccesslayer\\localdrivinglicenseapplicationsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CEB1E4-11BA-4B70-83EE-064EE7E1E6AB}|..\\DVLDBusinessLayer\\DVLDBusinessLayer.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvldbusinesslayer\\clsapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,38 +36,53 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDConsoleForTest\\Program.cs",
+              "RelativeDocumentMoniker": "..\\DVLDConsoleForTest\\Program.cs",
+              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDConsoleForTest\\Program.cs",
+              "RelativeToolTip": "..\\DVLDConsoleForTest\\Program.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAcwH8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T19:49:39.425Z",
+              "WhenOpened": "2026-11-10T10:27:48.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsApplication.cs",
+              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDBusinessLayer\\clsApplication.cs",
+              "RelativeDocumentMoniker": "..\\DVLDBusinessLayer\\clsApplication.cs",
+              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDBusinessLayer\\clsApplication.cs",
+              "RelativeToolTip": "..\\DVLDBusinessLayer\\clsApplication.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwCMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T10:14:26.437Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ApplicationsData.cs",
-              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLDDataAccessLayer\\ApplicationsData.cs",
-              "RelativeDocumentMoniker": "..\\..\\DVLDDataAccessLayer\\ApplicationsData.cs",
-              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLDDataAccessLayer\\ApplicationsData.cs",
-              "RelativeToolTip": "..\\..\\DVLDDataAccessLayer\\ApplicationsData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAA3AAAAAAAAAA==",
+              "Title": "clsLocalDrivingLicenseApplication.cs",
+              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDBusinessLayer\\clsLocalDrivingLicenseApplication.cs",
+              "RelativeDocumentMoniker": "..\\DVLDBusinessLayer\\clsLocalDrivingLicenseApplication.cs",
+              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDBusinessLayer\\clsLocalDrivingLicenseApplication.cs",
+              "RelativeToolTip": "..\\DVLDBusinessLayer\\clsLocalDrivingLicenseApplication.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAUwEYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T11:12:27.958Z"
+              "WhenOpened": "2026-11-10T09:44:24.205Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "LocalDrivingLicenseApplicationsData.cs",
-              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLDDataAccessLayer\\LocalDrivingLicenseApplicationsData.cs",
-              "RelativeDocumentMoniker": "..\\..\\DVLDDataAccessLayer\\LocalDrivingLicenseApplicationsData.cs",
-              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLDDataAccessLayer\\LocalDrivingLicenseApplicationsData.cs",
-              "RelativeToolTip": "..\\..\\DVLDDataAccessLayer\\LocalDrivingLicenseApplicationsData.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBYAAAAVAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDDataAccessLayer\\LocalDrivingLicenseApplicationsData.cs",
+              "RelativeDocumentMoniker": "..\\DVLDDataAccessLayer\\LocalDrivingLicenseApplicationsData.cs",
+              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDDataAccessLayer\\LocalDrivingLicenseApplicationsData.cs",
+              "RelativeToolTip": "..\\DVLDDataAccessLayer\\LocalDrivingLicenseApplicationsData.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAcwDwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T11:08:15.72Z"
+              "WhenOpened": "2026-11-10T09:31:49.114Z",
+              "EditorCaption": ""
             }
           ]
         }

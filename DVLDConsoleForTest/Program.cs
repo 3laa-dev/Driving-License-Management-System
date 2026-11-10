@@ -108,16 +108,33 @@ namespace DVLDConsoleForTest
             //}
             //Console.WriteLine(1);
 
-            DataTable dataTable = clsLicenseClass.GetAllLicenseClasses();
-            foreach (DataRow dr in dataTable.Rows)
-            {
-                
-                Console.WriteLine($"{dr["LicenseClassID"]} <> {dr["ClassName"]} <> {dr["ClassDescription"]}");
-                Console.WriteLine("---------");
-            }
-            clsLicenseClass test = clsLicenseClass.Find(5);
+            //DataTable dataTable = clsLicenseClass.GetAllLicenseClasses();
+            //foreach (DataRow dr in dataTable.Rows)
+            //{
 
-            Console.WriteLine(test.ClassDescription);
+            //    Console.WriteLine($"{dr["LicenseClassID"]} <> {dr["ClassName"]} <> {dr["ClassDescription"]}");
+            //    Console.WriteLine("---------");
+            //}
+            //clsLicenseClass test = clsLicenseClass.Find(5);
+
+            //Console.WriteLine(test.ClassDescription);
+
+            clsLocalDrivingLicenseApplication ob = new clsLocalDrivingLicenseApplication(2);
+
+            ob.ApplicationPersonID = 26;
+            ob.ApplicationTypeID = 1;
+            ob.ApplicationDate = DateTime.Parse("2-2-2027");
+            ob.ApplicationStatus = 0;
+            ob.LicenseClassID = 1;
+
+            if (ob.Save())
+            {
+                Console.WriteLine("Saved");
+            }
+            else {
+                Console.WriteLine("Save Failed");
+            }
+
             Console.ReadKey();
         }
     }
