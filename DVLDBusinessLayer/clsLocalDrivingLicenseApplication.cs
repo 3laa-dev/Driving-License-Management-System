@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,6 +50,7 @@ namespace DVLDBusinessLayer
         }
 
 
+
         bool _CreateNewLocalDrivingLicenseApplication() {
             this.LocalDrivingLicenseApplicationID =
                LocalDrivingLicenseApplicationsData.
@@ -67,6 +69,7 @@ namespace DVLDBusinessLayer
             
         }
 
+
         public bool Save()
         {
             switch (Mode)
@@ -81,9 +84,14 @@ namespace DVLDBusinessLayer
 
         }
 
-        public static bool IsPersonRegisteredForLocalDrivingLicenseApplication(int PersonID) {
-            return LocalDrivingLicenseApplicationsData.IsPersonRegisteredForLocalDrivingLicenseApplication(PersonID);
+        public static bool IsPersonRegisteredForLocalDrivingLicenseApplication(int PersonID , int LicenseClassID) {
+            return LocalDrivingLicenseApplicationsData.IsPersonRegisteredForLocalDrivingLicenseApplication(PersonID, LicenseClassID);
         }
+        public static DataTable GetAllLocalDrivingLicenseApplication()
+        {
+            return LocalDrivingLicenseApplicationsData.GetAllLocalDrivingLicenseApplication();
+        }
+
 
     }
 }

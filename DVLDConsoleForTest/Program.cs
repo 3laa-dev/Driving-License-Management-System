@@ -119,22 +119,35 @@ namespace DVLDConsoleForTest
 
             //Console.WriteLine(test.ClassDescription);
 
-            clsLocalDrivingLicenseApplication ob = new clsLocalDrivingLicenseApplication(2);
+            //clsLocalDrivingLicenseApplication ob = new clsLocalDrivingLicenseApplication(2);
 
-            ob.ApplicationPersonID = 26;
-            ob.ApplicationTypeID = 1;
-            ob.ApplicationDate = DateTime.Parse("2-2-2027");
-            ob.ApplicationStatus = 0;
-            ob.LicenseClassID = 1;
+            //ob.ApplicationPersonID = 26;
+            //ob.ApplicationTypeID = 1;
+            //ob.ApplicationDate = DateTime.Parse("2-2-2027");
+            //ob.ApplicationStatus = 0;
+            //ob.LicenseClassID = 1;
 
-            if (ob.Save())
+            //if (ob.Save())
+            //{
+            //    Console.WriteLine("Saved");
+            //}
+            //else {
+            //    Console.WriteLine("Save Failed");
+            //}
+
+            DataTable dt = clsLocalDrivingLicenseApplication.GetAllLocalDrivingLicenseApplication();
+            foreach (DataRow dr in dt.Rows)
             {
-                Console.WriteLine("Saved");
+                Console.WriteLine(
+                    $"{dr["LocalDrivigLicenseApplicationID"]} | " +
+                    $"{dr["ClassName"]} | " +
+                    $"{dr["NationalNo"]} | " +
+                    $"{dr["FirstName"]} | " +
+                    $"{dr["ApplicationDate"]} | " +
+                    $"{dr["PassedTest"]} | " +
+                    $"{dr["ApplicationStatus"]}"
+                );
             }
-            else {
-                Console.WriteLine("Save Failed");
-            }
-
             Console.ReadKey();
         }
     }

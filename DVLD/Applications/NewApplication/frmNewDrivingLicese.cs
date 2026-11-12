@@ -47,27 +47,17 @@ namespace DVLD.Applications.NewApplication
         {
             if (ctrlPersonCardWithFilter1.person != null)
             {
-                if (!clsLocalDrivingLicenseApplication.
-                    IsPersonRegisteredForLocalDrivingLicenseApplication
-                    (ctrlPersonCardWithFilter1.person.PersonID))
-                {
-                    tabControl1.TabPages[1].Enabled = true;
-                    SaveButtom.Enabled = true;
+                tabControl1.TabPages[1].Enabled = true;
 
-                    this.person = ctrlPersonCardWithFilter1.person;
-                    this.app = clsApplicationType.Find(1);
-                    
-                    lbApplicationDate.Text = DateTime.Now.ToString();
-                    lbApplicationFees.Text = app.Fees.ToString();
-                    lbCreatedBy.Text = clsGlobal.CurrentUser.UserName;
-                    tabControl1.SelectedIndex = 1;
-                }
-                else {
-                    MessageBox.Show($@"Choose another License Class,
-                                    the selected Person Already have an active
-                                        application for the selected
-                                 class with id={ctrlPersonCardWithFilter1.person.PersonID}");
-                }
+                this.person = ctrlPersonCardWithFilter1.person;
+                this.app = clsApplicationType.Find(1);
+
+                lbApplicationDate.Text = DateTime.Now.ToString();
+                lbApplicationFees.Text = app.Fees.ToString();
+                lbCreatedBy.Text = clsGlobal.CurrentUser.UserName;
+                tabControl1.SelectedIndex = 1;
+
+                
             }
             else {
                 MessageBox.Show("Please Select A Person");
@@ -87,20 +77,35 @@ namespace DVLD.Applications.NewApplication
 
         private void button3_Click(object sender, EventArgs e)
         {
-            clsLocalDrivingLicenseApplication NewApp =new  clsLocalDrivingLicenseApplication(clsGlobal.CurrentUser.UserID);
-            NewApp.ApplicationPersonID = this.person.PersonID;
-            NewApp.ApplicationDate = DateTime.Parse(lbApplicationDate.Text);
-            NewApp.PaidFees = this.app.Fees;
-            NewApp.ApplicationStatus = 0;
-            NewApp.LicenseClassID = (int)cbLicenseClass.SelectedValue;
+            if (!clsLocalDrivingLicenseApplication.
+                    IsPersonRegisteredForLocalDrivingLicenseApplication
+                    (ctrlPersonCardWithFilter1.person.PersonID , (int)cbLicenseClass.SelectedValue))
+            {
+                clsLocalDrivingLicenseApplication NewApp = new clsLocalDrivingLicenseApplication(clsGlobal.CurrentUser.UserID);
+                NewApp.ApplicationPersonID = this.person.PersonID;
+                NewApp.ApplicationDate = DateTime.Parse(lbApplicationDate.Text);
+                NewApp.PaidFees = this.app.Fees;
+                NewApp.ApplicationStatus = 0;
+                NewApp.LicenseClassID = (int)cbLicenseClass.SelectedValue;
 
-            if (NewApp.Save()) {
-                lbApplicationID.Text = NewApp.LocalDrivingLicenseApplicationID.ToString();
-                SaveButtom.Enabled = false;
-            }
-            else {
-                MessageBox.Show("Process  failed");
+                if (NewApp.Save())
+                {
+                    lbApplicationID.Text = NewApp.LocalDrivingLicenseApplicationID.ToString();
                 }
+                else
+                {
+                    MessageBox.Show("Process  failed");
+                }
+            }
+            else
+            {
+                MessageBox.Show($@"Choose another License Class,
+                                    the selected Person Already have an active
+                                        application for the selected
+                                 class with id={ctrlPersonCardWithFilter1.person.PersonID}");
+            }
+
+            
 
         }
     }

@@ -1,4 +1,5 @@
 ﻿using DVLD.Applications.ApplicationTypes;
+using DVLD.Applications.ManageLocalDrivinigLicseneApplication;
 using DVLD.Applications.NewApplication;
 using DVLD.Auth;
 using DVLD.TestTypes;
@@ -92,6 +93,11 @@ namespace DVLD
         private void localDrivingLicenseToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             new frmNewDrivingLicese().ShowDialog();
+        }
+
+        private void localDrivingLicesnseApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frmManageLocalDrivingLiceseApplications().ShowDialog();
         }
     }
 }

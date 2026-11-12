@@ -48,8 +48,8 @@ namespace DVLDDataAccessLayer
             try
             {
                 conn.Open();
-                object Value = sqlCommand.ExecuteNonQuery();
-                id = (int)Value;
+                object Value = sqlCommand.ExecuteScalar();
+                id = Convert.ToInt32(Value);
             }
             catch (Exception ex)
             {
@@ -61,17 +61,20 @@ namespace DVLDDataAccessLayer
             return id;
         }
 
-        public static bool IsPersonRegisteredForLocalDrivingLicenseApplication(int PersonID) { 
+        public static bool IsPersonRegisteredForLocalDrivingLicenseApplication(int PersonID , int LicenseClassID) { 
             SqlConnection conn = new SqlConnection(DatabaseSettings.ConnectionString);
 
             string query = @"SELECT Found = 1 FROM Applications
                             INNER JOIN LocalDrivingLicenseApplications
                             ON Applications.ApplicationID = LocalDrivingLicenseApplications.ApplicationID
-                            WHERE Applications.ApplicationStatus != 2 AND  Applications.ApplicationPersonID = @PersonID";
+                            WHERE Applications.ApplicationStatus != 2 
+                            AND  Applications.ApplicationPersonID = @PersonID
+                            AND LocalDrivingLicenseApplications.LicenseClassID = @LicenseClassID";
 
             SqlCommand command = new SqlCommand( query, conn );
 
             command.Parameters.AddWithValue("@PersonID", PersonID);
+            command.Parameters.AddWithValue("@LicenseClassID", LicenseClassID);
 
             bool isFound;
             try
@@ -92,5 +95,31 @@ namespace DVLDDataAccessLayer
             }
             return isFound;
         }
+
+        public static DataTable GetAllLocalDrivingLicenseApplication() { 
+            SqlConnection conn = new SqlConnection(DatabaseSettings.ConnectionString);
+
+            string query = @"SELECT * FROM viewLocalDrivingLicenseApplications";
+
+            SqlCommand command =  new SqlCommand(query , conn);
+
+            DataTable dataTable = new DataTable();
+
+            try
+            {
+                conn.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                    dataTable.Load(reader);
+
+                reader.Close();
+            }
+            catch (Exception ex) { }
+            finally { conn.Close(); }
+            return dataTable;
+        }
+
+
     }
 }
