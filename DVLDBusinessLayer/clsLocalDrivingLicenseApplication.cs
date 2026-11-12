@@ -92,6 +92,10 @@ namespace DVLDBusinessLayer
             return LocalDrivingLicenseApplicationsData.GetAllLocalDrivingLicenseApplication();
         }
 
+        public static DataTable GetAllLocalDrivingLicenseApplication(string FilterBy , string value)
+        {
+            return LocalDrivingLicenseApplicationsData.GetAllLocalDrivingLicenseApplication(FilterBy ,  value);
+        }
 
     }
 }

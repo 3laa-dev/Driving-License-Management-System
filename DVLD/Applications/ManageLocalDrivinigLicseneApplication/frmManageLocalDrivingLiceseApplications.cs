@@ -26,6 +26,14 @@ namespace DVLD.Applications.ManageLocalDrivinigLicseneApplication
             foreach (DataColumn col in dataTable.Columns) {
                 comboBox1.Items.Add(col.ToString());
             }
+            comboBox1.SelectedIndex = 0;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string FilterBy = comboBox1.SelectedItem.ToString();
+            string value = textBox1.Text;
+            dataGridView1.DataSource = clsLocalDrivingLicenseApplication.GetAllLocalDrivingLicenseApplication(FilterBy ,   value);
         }
     }
 }

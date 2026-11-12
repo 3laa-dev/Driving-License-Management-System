@@ -96,6 +96,7 @@ namespace DVLDDataAccessLayer
             return isFound;
         }
 
+
         public static DataTable GetAllLocalDrivingLicenseApplication() { 
             SqlConnection conn = new SqlConnection(DatabaseSettings.ConnectionString);
 
@@ -120,6 +121,34 @@ namespace DVLDDataAccessLayer
             return dataTable;
         }
 
+
+        public static DataTable GetAllLocalDrivingLicenseApplication(string FilterBy, string value)
+        {
+            SqlConnection conn = new SqlConnection(DatabaseSettings.ConnectionString);
+
+            string query = $@"SELECT * FROM viewLocalDrivingLicenseApplications
+                              WHERE {FilterBy}  like @value";
+
+            SqlCommand command = new SqlCommand(query, conn);
+
+            command.Parameters.AddWithValue("@value", value+"%");
+
+            DataTable dataTable = new DataTable();
+
+            try
+            {
+                conn.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                    dataTable.Load(reader);
+
+                reader.Close();
+            }
+            catch (Exception ex) { }
+            finally { conn.Close(); }
+            return dataTable;
+        }
 
     }
 }
