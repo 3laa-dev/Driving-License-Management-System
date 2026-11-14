@@ -17,7 +17,10 @@ namespace DVLD.Applications.ManageLocalDrivinigLicseneApplication
         {
             InitializeComponent();
         }
-
+        private void updadateCountOfRecord()
+        {
+            countOfRecords.Text = (dataGridView1.RowCount).ToString();
+        }
         private void frmManageLocalDrivingLiceseApplications_Load(object sender, EventArgs e)
         {
             DataTable dataTable = clsLocalDrivingLicenseApplication.GetAllLocalDrivingLicenseApplication();
@@ -27,13 +30,29 @@ namespace DVLD.Applications.ManageLocalDrivinigLicseneApplication
                 comboBox1.Items.Add(col.ToString());
             }
             comboBox1.SelectedIndex = 0;
+            updadateCountOfRecord();
+            
         }
 
+        
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             string FilterBy = comboBox1.SelectedItem.ToString();
             string value = textBox1.Text;
             dataGridView1.DataSource = clsLocalDrivingLicenseApplication.GetAllLocalDrivingLicenseApplication(FilterBy ,   value);
+        }
+
+        private void cancelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["LocalDrivingLicenseApplicationID"].Value.ToString());
+            if (clsLocalDrivingLicenseApplication.CancelLocalDrivingLicenseApplication(id)) {
+                MessageBox.Show("Application Cancelled successfully");
+            }
+            else
+            {
+                MessageBox.Show("Failed to Cancel Application");
+            }
+            frmManageLocalDrivingLiceseApplications_Load(sender , e);
         }
     }
 }

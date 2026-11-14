@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using DVLDDataAccessLayer;
 
 namespace DVLDBusinessLayer
 {
     public class clsApplication
     {
         internal enMode Mode;
+        public int ApplicationID ;
         public int ApplicationPersonID { set; get; }
         public int CreatedByUserID { set; get; }
         public int ApplicationTypeID { set; get; }
@@ -26,8 +29,9 @@ namespace DVLDBusinessLayer
             this.LastStatusDate = DateTime.Now;
             this.Mode = enMode.AddNew;
             this.CreatedByUserID = CreatedByUserID;
+            this.ApplicationID = -1;
         }
-        protected clsApplication( int applicationPersonID, int createdByUserID, int applicationTypeID, DateTime applicationDate, byte applicationStatus, DateTime lastStatusDate, decimal paidFees)
+        protected clsApplication( int applicationID, int applicationPersonID, int createdByUserID, int applicationTypeID, DateTime applicationDate, byte applicationStatus, DateTime lastStatusDate, decimal paidFees)
         {
             ApplicationPersonID = applicationPersonID;
             CreatedByUserID = createdByUserID;
@@ -37,6 +41,13 @@ namespace DVLDBusinessLayer
             LastStatusDate = lastStatusDate;
             Mode = enMode.Update;
             PaidFees = paidFees;
+            this.ApplicationID = applicationID;
         }
+
+        public  static  bool CancelApplication(int applicationID) { 
+            return ApplicationsData.CancelApplication(applicationID);
+        }
+        
+
     }
 }

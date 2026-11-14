@@ -24,30 +24,30 @@ namespace DVLDBusinessLayer
             
         }
 
-        private clsLocalDrivingLicenseApplication
-            (
-                int LocalDrivingLicenseApplicationID,
-                int ApplicationPersonID,
-                int CreatedByUserID,
-                int ApplicationTypeID,
-                DateTime ApplicationDate,
-                byte ApplicationStatus,
-                DateTime LastStatusDate,
-                decimal PaidFees,
-                int LicenseClassID
-            ) : base(
-                    ApplicationPersonID,
-                    CreatedByUserID,
-                    ApplicationTypeID,
-                    ApplicationDate,
-                    ApplicationStatus,
-                    LastStatusDate,
-                    PaidFees  
-                )
-        { 
-            this.LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplicationID;
-            this.LicenseClassID = LicenseClassID;
-        }
+        //private clsLocalDrivingLicenseApplication
+        //    (
+        //        int LocalDrivingLicenseApplicationID,
+        //        int ApplicationPersonID,
+        //        int CreatedByUserID,
+        //        int ApplicationTypeID,
+        //        DateTime ApplicationDate,
+        //        byte ApplicationStatus,
+        //        DateTime LastStatusDate,
+        //        decimal PaidFees,
+        //        int LicenseClassID
+        //    ) : base(
+        //            ApplicationPersonID,
+        //            CreatedByUserID,
+        //            ApplicationTypeID,
+        //            ApplicationDate,
+        //            ApplicationStatus,
+        //            LastStatusDate,
+        //            PaidFees  
+        //        )
+        //{ 
+        //    this.LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplicationID;
+        //    this.LicenseClassID = LicenseClassID;
+        //}
 
 
 
@@ -97,5 +97,8 @@ namespace DVLDBusinessLayer
             return LocalDrivingLicenseApplicationsData.GetAllLocalDrivingLicenseApplication(FilterBy ,  value);
         }
 
+        public static bool CancelLocalDrivingLicenseApplication(int LocalDrivingLicenseApplicationID) {
+            return LocalDrivingLicenseApplicationsData.CancelLocalDrivingLicenseApplication(LocalDrivingLicenseApplicationID);
+        }
     }
 }

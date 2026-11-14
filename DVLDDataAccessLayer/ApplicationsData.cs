@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace DVLDDataAccessLayer
 {
-    internal class ApplicationsData
+    public class ApplicationsData
     {
         public static DataTable GetAllApplications()
         {
@@ -222,6 +222,37 @@ namespace DVLDDataAccessLayer
             return isDeleted;
         }
 
-      
+        public static bool CancelApplication( int ApplicationID )
+        {
+            SqlConnection conn = new SqlConnection(DatabaseSettings.ConnectionString);
+
+            string query = @"UPDATE Applications
+                            SET ApplicationStatus = 2
+                             WHERE ApplicationID = @ApplicationID ";
+            SqlCommand sqlCommand = new SqlCommand(query, conn);
+
+            sqlCommand.Parameters.AddWithValue("@ApplicationID", ApplicationID);
+            
+
+            bool canceled;
+            try
+            {
+                conn.Open();
+                int result = sqlCommand.ExecuteNonQuery();
+                canceled = result > 0;
+
+            }
+            catch (Exception)
+            {
+                canceled = false;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return canceled;
+        }
+
+
     }
 }

@@ -470,4 +470,16 @@
         mV4PArYcpE8ADwASQgghKdPPOYCW/a4C8ACgGvz/1h3maAPh3VcAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="cancelToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAM9JREFUWEdj
+        YBgFowAK+jbfy5m49cF/cnH/5ger0c0kCYw6YNQBvevuqoEcQS7u2nzXC93MUUAWKF10PaFi/nUFBP/m
+        fGQ+TKx00Y3/5OPrCcjmwQFIAqroPsjS0kU39kP5+9EdhWkoKRinA3AaDHYQEeqIxDgcAAJYDL9fsvi6
+        AwE1JGK8DoAHOwyj+B6ihkYOwGI5DNMnCsoWXm+AWQgKdiSL9iOro5kDQAAkiRznIEehqqCxA0YuGPDK
+        CGQIehVLCqa4Oh51wKgDRsGIBQDQVG0hsKTOVAAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

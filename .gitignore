@@ -1,0 +1,102 @@
+
+# ==============================
+# Visual Studio
+# ==============================
+
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ==============================
+# .NET Build Outputs
+# ==============================
+
+**/bin/
+**/obj/
+[Bb]in/
+[Oo]bj/
+
+# ==============================
+# Compiled Files
+# ==============================
+
+*.dll
+*.exe
+*.pdb
+*.obj
+*.o
+*.cache
+*.ilk
+*.pch
+*.ipch
+*.class
+
+# ==============================
+# Visual Studio Build
+# ==============================
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+out/
+
+# ==============================
+# NuGet
+# ==============================
+
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# ==============================
+# Temporary Files
+# ==============================
+
+*.tmp
+*.temp
+*.log
+*.bak
+*.old
+
+# ==============================
+# User-specific Files
+# ==============================
+
+*.user
+*.sln.ide
+
+# ==============================
+# Test Results
+# ==============================
+
+TestResults/
+[Tt]est[Rr]esult*/
+coverage/
+
+# ==============================
+# Operating System
+# ==============================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# Resharper
+# ==============================
+
+_ReSharper*/
+*.DotSettings.user
+
+# ==============================
+# Publish Outputs
+# ==============================
+
+publish/
+artifacts/

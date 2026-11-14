@@ -150,5 +150,40 @@ namespace DVLDDataAccessLayer
             return dataTable;
         }
 
+
+        public static bool CancelLocalDrivingLicenseApplication(int LocalDrivingLicenseApplicationID)
+        {
+            SqlConnection conn = new SqlConnection(DatabaseSettings.ConnectionString);
+
+            string query = @"UPDATE Applications 
+                            SET ApplicationStatus = 2
+                            FROM Applications 
+                            INNER JOIN LocalDrivingLicenseApplications 
+                            ON Applications.ApplicationID = LocalDrivingLicenseApplications.ApplicationID 
+                            WHERE LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID";
+            SqlCommand sqlCommand = new SqlCommand(query, conn);
+
+            sqlCommand.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseApplicationID);
+
+
+            bool canceled;
+            try
+            {
+                conn.Open();
+                int result = sqlCommand.ExecuteNonQuery();
+                canceled = result > 0;
+
+            }
+            catch (Exception ex)
+            {
+                canceled = false;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return canceled;
+        }
+
     }
 }
