@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using DVLDDataAccessLayer;
@@ -24,30 +25,32 @@ namespace DVLDBusinessLayer
             
         }
 
-        //private clsLocalDrivingLicenseApplication
-        //    (
-        //        int LocalDrivingLicenseApplicationID,
-        //        int ApplicationPersonID,
-        //        int CreatedByUserID,
-        //        int ApplicationTypeID,
-        //        DateTime ApplicationDate,
-        //        byte ApplicationStatus,
-        //        DateTime LastStatusDate,
-        //        decimal PaidFees,
-        //        int LicenseClassID
-        //    ) : base(
-        //            ApplicationPersonID,
-        //            CreatedByUserID,
-        //            ApplicationTypeID,
-        //            ApplicationDate,
-        //            ApplicationStatus,
-        //            LastStatusDate,
-        //            PaidFees  
-        //        )
-        //{ 
-        //    this.LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplicationID;
-        //    this.LicenseClassID = LicenseClassID;
-        //}
+        private clsLocalDrivingLicenseApplication
+            (
+                int LocalDrivingLicenseApplicationID,
+                int ApplicationID,
+                int ApplicationPersonID,
+                int CreatedByUserID,
+                int ApplicationTypeID,
+                DateTime ApplicationDate,
+                byte ApplicationStatus,
+                DateTime LastStatusDate,
+                decimal PaidFees,
+                int LicenseClassID
+            ) : base(
+                    ApplicationID,
+                    ApplicationPersonID,
+                    CreatedByUserID,
+                    ApplicationTypeID,
+                    ApplicationDate,
+                    ApplicationStatus,
+                    LastStatusDate,
+                    PaidFees
+                )
+        {
+            this.LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplicationID;
+            this.LicenseClassID = LicenseClassID;
+        }
 
 
 
@@ -99,6 +102,46 @@ namespace DVLDBusinessLayer
 
         public static bool CancelLocalDrivingLicenseApplication(int LocalDrivingLicenseApplicationID) {
             return LocalDrivingLicenseApplicationsData.CancelLocalDrivingLicenseApplication(LocalDrivingLicenseApplicationID);
+        }
+
+        public static clsLocalDrivingLicenseApplication Find(int ID ) {
+            
+            int ApplicationID = -1;
+            int ApplicationPersonID = -1;
+            int CreatedByUserID = -1;
+            int ApplicationTypeID = -1;
+            DateTime ApplicationDate = DateTime.Now;
+            byte ApplicationStatus = 0;
+            DateTime LastStatusDate = DateTime.Now;
+            decimal PaidFees = 0;
+            int LicenseClassID = -1;
+
+
+            return (LocalDrivingLicenseApplicationsData
+                    .GetLocalDrivingLicenseApplicationByID(
+                     ID,
+                        ref ApplicationID,
+                        ref ApplicationPersonID,
+                        ref CreatedByUserID,
+                        ref ApplicationTypeID,
+                        ref  ApplicationDate,
+                        ref  ApplicationStatus,
+                        ref  LastStatusDate,
+                        ref  PaidFees,
+                        ref  LicenseClassID
+                )) ?
+                new clsLocalDrivingLicenseApplication
+                (ID,
+                 ApplicationID,
+                 ApplicationPersonID,
+                 CreatedByUserID,
+                 ApplicationTypeID,
+                 ApplicationDate,
+                 ApplicationStatus,
+                 LastStatusDate,
+                 PaidFees,
+                 LicenseClassID)
+                :null;
         }
     }
 }

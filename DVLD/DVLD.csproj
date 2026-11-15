@@ -71,6 +71,18 @@
       <DependentUpon>frmNewDrivingLicese.cs</DependentUpon>
     </Compile>
     <Compile Include="Auth\clsGlobal.cs" />
+    <Compile Include="Componenets\ctrlApplicationInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componenets\ctrlApplicationInfo.Designer.cs">
+      <DependentUpon>ctrlApplicationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componenets\ctrlLocalDrivingLicesnseApplication.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componenets\ctrlLocalDrivingLicesnseApplication.Designer.cs">
+      <DependentUpon>ctrlLocalDrivingLicesnseApplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="Componenets\ctrlUserCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -179,6 +191,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Componenets\ctrlAddNewUpdatePerson.resx">
       <DependentUpon>ctrlAddNewUpdatePerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componenets\ctrlApplicationInfo.resx">
+      <DependentUpon>ctrlApplicationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componenets\ctrlLocalDrivingLicesnseApplication.resx">
+      <DependentUpon>ctrlLocalDrivingLicesnseApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componenets\ctrlPersonCard.resx">
       <DependentUpon>ctrlPersonCard.cs</DependentUpon>

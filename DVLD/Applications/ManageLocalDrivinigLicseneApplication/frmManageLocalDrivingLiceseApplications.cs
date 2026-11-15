@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DVLD.Applications.ManageLocalDrivinigLicseneApplication
 {
@@ -29,7 +30,9 @@ namespace DVLD.Applications.ManageLocalDrivinigLicseneApplication
             foreach (DataColumn col in dataTable.Columns) {
                 comboBox1.Items.Add(col.ToString());
             }
-            comboBox1.SelectedIndex = 0;
+            if (comboBox1.Items.Count > 0) {
+                comboBox1.SelectedIndex = 0;
+            }
             updadateCountOfRecord();
             
         }

@@ -185,5 +185,70 @@ namespace DVLDDataAccessLayer
             return canceled;
         }
 
+        public static bool GetLocalDrivingLicenseApplicationByID(
+                int LocalDrivingLicenseApplicationID,
+                ref int ApplicationID,
+                ref int ApplicationPersonID,
+                ref int CreatedByUserID,
+                ref int ApplicationTypeID,
+                ref DateTime ApplicationDate,
+                ref byte ApplicationStatus,
+                ref DateTime LastStatusDate,
+                ref decimal PaidFees,
+                ref int LicenseClassID
+            ) {
+            bool isFound;
+            using (SqlConnection conn = new SqlConnection(DatabaseSettings.ConnectionString)) { 
+                conn.Open();
+                string query = @"SELECT
+                                   	Applications.ApplicationID ,
+                                   	LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID,
+                                   	Applications.ApplicationPersonID ,
+                                   	Applications.CreatedByUserID ,
+                                   	Applications.ApplicationTypeID , 
+                                   	Applications.ApplicationDate ,
+                                   	Applications.ApplicationStatus , 
+                                   	Applications.LastStatusDate , 
+                                   	Applications.PaidFees , 
+                                   	LocalDrivingLicenseApplications.LicenseClassID
+                                   FROM Applications
+                                   INNER JOIN  LocalDrivingLicenseApplications
+                                   ON LocalDrivingLicenseApplications.ApplicationID = Applications.ApplicationID
+                                   WHERE LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID";
+                using (SqlCommand sqlCommand = new SqlCommand(query, conn))
+                {
+                    
+                    sqlCommand.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseApplicationID);
+                    try
+                    {
+                        using (SqlDataReader reader = sqlCommand.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                LocalDrivingLicenseApplicationID = (int)reader["LocalDrivingLicenseApplicationID"];
+                                ApplicationID = (int)reader["ApplicationID"];
+                                ApplicationPersonID = (int)reader["ApplicationPersonID"];
+                                CreatedByUserID = (int)reader["CreatedByUserID"];
+                                ApplicationTypeID = (int)reader["ApplicationTypeID"];
+                                ApplicationDate = (DateTime)reader["ApplicationDate"];
+                                ApplicationStatus = (byte)reader["ApplicationStatus"];
+                                LastStatusDate = (DateTime)reader["LastStatusDate"];
+                                PaidFees = (decimal)reader["PaidFees"];
+                                LicenseClassID = (int)reader["LicenseClassID"];
+                                isFound = true;
+                            }else isFound = false;
+
+                        }
+                    }
+                    catch (Exception ex) {
+                        isFound = false;
+                    }
+                }
+                return isFound;
+
+            }
+            
+        }
+
     }
 }
