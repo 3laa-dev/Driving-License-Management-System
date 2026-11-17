@@ -23,6 +23,13 @@ namespace DVLD.Tests
         private void frmVisionTest_Load(object sender, EventArgs e)
         {
             ctrlLocalDrivingLicesnseApplication1.loadLocalDrivingLiceseApplication(_application);
+            dataGridView1.DataSource = clsTestAppointment.GetTestAppointments(_application.LocalDrivingLicenseApplicationID ,1 );
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            clsTestAppointment testAppointment = new clsTestAppointment();
+            
         }
     }
 }

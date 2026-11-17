@@ -27,6 +27,12 @@ namespace DVLD.Componenets
             lbDate.Text = application.ApplicationDate.ToString();
             lbStatusDate.Text = application.LastStatusDate.ToString();
             lbCreatedBy.Text = application.User.UserName;
+            lbType.Text = application.Type.Title.ToString();
+        }
+
+        private void ctrlApplicationInfo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -21,6 +21,7 @@ namespace DVLDBusinessLayer
         public decimal PaidFees { set; get; }
         public Person Person { set; get; }
         public clsUser User { set; get; }
+        public clsApplicationType Type { set; get; }
         
         public clsApplication(int CreatedByUserID) {
             this.ApplicationPersonID = -1;
@@ -50,6 +51,7 @@ namespace DVLDBusinessLayer
 
             this.Person = Person.Find(ApplicationPersonID);
             this.User = clsUser.Find(this.CreatedByUserID);
+            this.Type = clsApplicationType.Find(this.ApplicationTypeID);
         }
 
 

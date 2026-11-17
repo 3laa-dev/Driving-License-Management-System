@@ -325,6 +325,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ctrlApplicationInfo";
             this.Size = new System.Drawing.Size(742, 215);
+            this.Load += new System.EventHandler(this.ctrlApplicationInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
