@@ -89,6 +89,12 @@
     <Compile Include="Componenets\ctrlUserCard.Designer.cs">
       <DependentUpon>ctrlUserCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tests\frmVisionTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\frmVisionTest.Designer.cs">
+      <DependentUpon>frmVisionTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="TestTypes\frmManageTestTypes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="People\frmAddNewUpdatePerson.resx">
       <DependentUpon>frmAddNewUpdatePerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tests\frmVisionTest.resx">
+      <DependentUpon>frmVisionTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestTypes\frmManageTestTypes.resx">
       <DependentUpon>frmManageTestTypes.cs</DependentUpon>

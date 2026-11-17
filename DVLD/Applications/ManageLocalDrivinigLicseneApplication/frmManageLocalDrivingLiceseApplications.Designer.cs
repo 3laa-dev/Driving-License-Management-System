@@ -41,6 +41,8 @@
             this.cancelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.countOfRecords = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.schedualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sechedualVisionTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -124,9 +126,10 @@
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cancelToolStripMenuItem});
+            this.cancelToolStripMenuItem,
+            this.schedualToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(127, 30);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(215, 84);
             // 
             // cancelToolStripMenuItem
             // 
@@ -155,6 +158,23 @@
             this.label3.Size = new System.Drawing.Size(90, 25);
             this.label3.TabIndex = 28;
             this.label3.Text = "#Recors:";
+            // 
+            // schedualToolStripMenuItem
+            // 
+            this.schedualToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sechedualVisionTestToolStripMenuItem});
+            this.schedualToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("schedualToolStripMenuItem.Image")));
+            this.schedualToolStripMenuItem.Name = "schedualToolStripMenuItem";
+            this.schedualToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.schedualToolStripMenuItem.Text = "Sechedual Tests";
+            // 
+            // sechedualVisionTestToolStripMenuItem
+            // 
+            this.sechedualVisionTestToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sechedualVisionTestToolStripMenuItem.Image")));
+            this.sechedualVisionTestToolStripMenuItem.Name = "sechedualVisionTestToolStripMenuItem";
+            this.sechedualVisionTestToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.sechedualVisionTestToolStripMenuItem.Text = "Sechedual Vision Test";
+            this.sechedualVisionTestToolStripMenuItem.Click += new System.EventHandler(this.sechedualVisionTestToolStripMenuItem_Click);
             // 
             // frmManageLocalDrivingLiceseApplications
             // 
@@ -193,5 +213,7 @@
         private System.Windows.Forms.ToolStripMenuItem cancelToolStripMenuItem;
         private System.Windows.Forms.Label countOfRecords;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStripMenuItem schedualToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sechedualVisionTestToolStripMenuItem;
     }
 }

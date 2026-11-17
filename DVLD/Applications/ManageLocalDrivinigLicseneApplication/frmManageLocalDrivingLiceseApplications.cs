@@ -1,4 +1,5 @@
-﻿using DVLDBusinessLayer;
+﻿using DVLD.Tests;
+using DVLDBusinessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -56,6 +57,15 @@ namespace DVLD.Applications.ManageLocalDrivinigLicseneApplication
                 MessageBox.Show("Failed to Cancel Application");
             }
             frmManageLocalDrivingLiceseApplications_Load(sender , e);
+        }
+
+        private void sechedualVisionTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["LocalDrivingLicenseApplicationID"].Value.ToString());
+            clsLocalDrivingLicenseApplication app = clsLocalDrivingLicenseApplication.Find(id);
+
+                new frmVisionTest(app).ShowDialog();
+            
         }
     }
 }

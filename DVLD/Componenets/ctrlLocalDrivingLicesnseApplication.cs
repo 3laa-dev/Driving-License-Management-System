@@ -19,8 +19,8 @@ namespace DVLD.Componenets
         }
 
         public void loadLocalDrivingLiceseApplication(clsLocalDrivingLicenseApplication application) {
-            lbID.Text = application.ApplicationID;
-            lbClass.Text = application.LicenseClass;
+            lbID.Text = application.ApplicationID.ToString();
+            lbClass.Text = application.LicenseClassID.ToString();
             ctrlApplicationInfo1.loadApplication(application);    
         }
     }
