@@ -20,6 +20,8 @@ namespace DVLDBusinessLayer
         public int CreatedByUserID { get; set; }
         public bool isLocked { set; get; }
         
+        clsTestType TestType { set; get; }
+
         public clsTestAppointment() { 
             this.TestAppointmentID = -1;
             this.TestTypeID = -1;
@@ -28,6 +30,7 @@ namespace DVLDBusinessLayer
             this.PaidFees = 0;
             this.CreatedByUserID = -1;
             this.isLocked = false;
+            this.TestType = null;
             
             this.Mode = enMode.AddNew;
         }
@@ -41,6 +44,9 @@ namespace DVLDBusinessLayer
             AppointmentDate = appointmentDate;
             PaidFees = paidFees;
             CreatedByUserID = createdByUserID;
+
+
+
             this.isLocked = isLocked;
         }
 
@@ -118,8 +124,13 @@ namespace DVLDBusinessLayer
 
         }
 
+
         public static DataTable GetTestAppointments(int LocalDrivingLicesenseApplicationID , int TestTypeID) {
             return TestAppointmentsData.GetTestAppointments(LocalDrivingLicesenseApplicationID , TestTypeID );
+        }
+
+        public static bool hasActiveAppointment(int LocalDrivingLicesenseApplicationID) { 
+            return TestAppointmentsData.hasActiveAppointment(LocalDrivingLicesenseApplicationID); ;
         }
 
     }

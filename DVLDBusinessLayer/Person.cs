@@ -30,6 +30,13 @@ namespace DVLDBusinessLayer
         public int NationalityCountryID { get; set; }
         public string ImagePath{ get; set; }
 
+        public string FullName {
+            get
+            {
+                return this.FirstName +" "+ this.SecondName + " " + this.ThirdName + " " + this.LastName;
+
+            }
+        }
         public clsCountry CountryInfo { set; get; }
 
         private Person(
@@ -82,6 +89,7 @@ namespace DVLDBusinessLayer
             this.Mode = enMode.AddNew;
         }
 
+        
         public static DataTable GetPeople()
         {
             return PeopleData.GetPeople();

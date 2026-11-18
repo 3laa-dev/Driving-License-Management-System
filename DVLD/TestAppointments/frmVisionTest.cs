@@ -1,4 +1,5 @@
-﻿using DVLDBusinessLayer;
+﻿using DVLD.TestAppointments;
+using DVLDBusinessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,7 +29,19 @@ namespace DVLD.Tests
 
         private void button1_Click(object sender, EventArgs e)
         {
-            clsTestAppointment testAppointment = new clsTestAppointment();
+            frmSechudulVisionTest frm;
+            if (clsTestAppointment.hasActiveAppointment(_application.LocalDrivingLicenseApplicationID))
+            {
+                MessageBox.Show("This Person Alleady have Active Appointment");
+            }
+            else
+            {
+               
+                frm = new frmSechudulVisionTest(_application);
+                frm.refreshHandler += () => { dataGridView1.DataSource = clsTestAppointment.GetTestAppointments(_application.LocalDrivingLicenseApplicationID, 1); };
+                frm.ShowDialog();
+                
+            }
             
         }
     }

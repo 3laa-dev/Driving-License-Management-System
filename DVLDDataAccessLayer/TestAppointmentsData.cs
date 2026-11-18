@@ -54,7 +54,7 @@ namespace DVLDDataAccessLayer
             )
         {
             int TestAppointmentID;
-            using (SqlConnection conn = new SqlConnection())
+            using (SqlConnection conn = new SqlConnection(DatabaseSettings.ConnectionString))
             {
                 string query = @"INSERT INTO TestAppointments
                                       (TestTypeID ,
@@ -86,7 +86,7 @@ namespace DVLDDataAccessLayer
                         conn.Open();
                         object value = cmd.ExecuteScalar();
                         if (value != null)
-                            TestAppointmentID = (int)value;
+                            TestAppointmentID =Convert.ToInt32 (value);
                         else
                             TestAppointmentID = -1;
                     }
@@ -189,6 +189,26 @@ namespace DVLDDataAccessLayer
                     {
                         isFaund = false;
                     }
+                }
+            }
+            return isFaund;
+        }
+
+        public static bool hasActiveAppointment(int LocalDrivingLicesenseApplicationID) {
+            bool isFaund ;
+            using (SqlConnection conn = new SqlConnection(DatabaseSettings.ConnectionString)) {
+                string query = @"SELECT FOUND = 1 FROM TestAppointments 
+                                    WHERE LocalDrivingLicesenseApplicationID = @LocalDrivingLicesenseApplicationID and isLocked = 0";
+                using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                    cmd.Parameters.AddWithValue("@LocalDrivingLicesenseApplicationID", LocalDrivingLicesenseApplicationID);
+
+                    try
+                    {
+                        conn.Open();
+                        object value = (cmd.ExecuteScalar());
+                        isFaund = value != null;
+                    }
+                    catch (Exception ex) { isFaund = false; }
                 }
             }
             return isFaund;
