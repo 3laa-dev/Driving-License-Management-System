@@ -20,7 +20,9 @@ namespace DVLDBusinessLayer
         public int CreatedByUserID { get; set; }
         public bool isLocked { set; get; }
         
-        clsTestType TestType { set; get; }
+        public clsTestType TestType { set; get; }
+
+        public clsLocalDrivingLicenseApplication LocalDrivingLicenseApplication { set; get; }
 
         public clsTestAppointment() { 
             this.TestAppointmentID = -1;
@@ -31,7 +33,7 @@ namespace DVLDBusinessLayer
             this.CreatedByUserID = -1;
             this.isLocked = false;
             this.TestType = null;
-            
+            this.LocalDrivingLicenseApplication = null;
             this.Mode = enMode.AddNew;
         }
 
@@ -45,13 +47,13 @@ namespace DVLDBusinessLayer
             PaidFees = paidFees;
             CreatedByUserID = createdByUserID;
 
-
+            this.LocalDrivingLicenseApplication = clsLocalDrivingLicenseApplication.Find(localDrivingLicesenseApplicationID);
 
             this.isLocked = isLocked;
         }
 
-        public static clsTestAppointment Find(int testAppointmentID) {
-            int TestAppointmentID = -1;
+        public static clsTestAppointment Find(int TestAppointmentID) {
+            
             int TestTypeID = -1;
             int LocalDrivingLicesenseApplicationID = -1;
             DateTime AppointmentDate = DateTime.MinValue;

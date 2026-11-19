@@ -67,3 +67,4 @@ C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.Componenets.ctrlAppl
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.Componenets.ctrlLocalDrivingLicesnseApplication.resources
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.Tests.frmVisionTest.resources
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.TestAppointments.frmSechudulVisionTest.resources
+C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.Tests.frmTakeTest.resources

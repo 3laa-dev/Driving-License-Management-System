@@ -38,10 +38,27 @@ namespace DVLD.Tests
             {
                
                 frm = new frmSechudulVisionTest(_application);
-                frm.refreshHandler += () => { dataGridView1.DataSource = clsTestAppointment.GetTestAppointments(_application.LocalDrivingLicenseApplicationID, 1); };
+                frm.refreshHandler += refresh;
                 frm.ShowDialog();
                 
             }
+            
+        }
+
+        private void refresh() {
+            dataGridView1.DataSource = clsTestAppointment.GetTestAppointments(_application.LocalDrivingLicenseApplicationID, 1);
+        }
+        private void takeTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["TestAppointmentID"].Value.ToString());
+            clsTestAppointment appointment = clsTestAppointment.Find(id);
+            if (appointment != null)
+            {
+                frmTakeTest frm = new frmTakeTest(appointment);
+                frm.refreshHandler += refresh;
+                frm.ShowDialog();
+            }
+            
             
         }
     }
