@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DVLDDataAccessLayer.Utils;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -130,6 +131,8 @@ namespace DVLDDataAccessLayer
                                 SELECT SCOPE_IDENTITY();";
             SqlCommand sqlCommand = new SqlCommand( query , conn);
 
+            Password = clsHash.ComputeHash(Password);
+
             sqlCommand.Parameters.AddWithValue("@PersonID", PersonID);
             sqlCommand.Parameters.AddWithValue("@UserName" , UserName);
             sqlCommand.Parameters.AddWithValue("@Password" , Password);
@@ -170,7 +173,7 @@ namespace DVLDDataAccessLayer
             string query = @"UPDATE Users
             SET UserName = @UserName , 
                 isActive = @isActive
-          WHERE UserID = @UserID ";
+            WHERE UserID = @UserID ";
             SqlCommand sqlCommand = new SqlCommand(query, conn);
 
             sqlCommand.Parameters.AddWithValue("@UserName", UserName);
@@ -209,6 +212,9 @@ namespace DVLDDataAccessLayer
             string query = @"SELECT * FROM Users 
                              WHERE UserName = @UserName AND Password = @Password";
             SqlCommand sqlCommand = new SqlCommand(query , conn);
+           
+            Password = clsHash.ComputeHash(Password);
+
             sqlCommand.Parameters.AddWithValue ("@UserName", UserName);
             sqlCommand.Parameters.AddWithValue("@Password", Password);
             bool isFound;
@@ -302,10 +308,17 @@ namespace DVLDDataAccessLayer
                             WHERE UserID = @UserID AND Password = @Password";
             SqlCommand sqlCommand = new SqlCommand( query , sqlConnection);
             sqlCommand.Parameters.AddWithValue("@UserID" , UserID );
+            Password = clsHash.ComputeHash(Password);
+            NewPassword = clsHash.ComputeHash(NewPassword);
+
             sqlCommand.Parameters.AddWithValue("@Password" , Password);
             sqlCommand.Parameters.AddWithValue("@NewPassword", NewPassword);
             bool PasswordHasChanged;
-            try {
+
+            
+
+            try
+            {
                 sqlConnection.Open();
                 int EffectedRows = sqlCommand.ExecuteNonQuery();
                 PasswordHasChanged = EffectedRows == 1;

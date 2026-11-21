@@ -3,11 +3,17 @@
   "WorkspaceRootPath": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{095773CD-7B64-4E0C-A033-9217578A167B}|..\\DVLDDataAccessLayer\\DVLDDataAccessLayer.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvlddataaccesslayer\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{095773CD-7B64-4E0C-A033-9217578A167B}|..\\DVLDDataAccessLayer\\DVLDDataAccessLayer.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvlddataaccesslayer\\utils\\clshash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\testappointments\\frmvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:testappointments\\frmvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\tests\\frmtaketest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\tests\\frmtaketest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:tests\\frmtaketest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -20,20 +26,16 @@
       "AbsoluteMoniker": "D:0:0:{095773CD-7B64-4E0C-A033-9217578A167B}|..\\DVLDDataAccessLayer\\DVLDDataAccessLayer.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvlddataaccesslayer\\testsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\tests\\frmtaketest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\tests\\frmtaketest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:tests\\frmtaketest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\testappointments\\frmsechudulvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\testappointments\\frmsechudulvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:testappointments\\frmsechudulvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\testappointments\\frmvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\testappointments\\frmvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:testappointments\\frmvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\testappointments\\frmsechudulvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:testappointments\\frmsechudulvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,31 +58,56 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserData.cs",
+              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDDataAccessLayer\\UserData.cs",
+              "RelativeDocumentMoniker": "..\\DVLDDataAccessLayer\\UserData.cs",
+              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDDataAccessLayer\\UserData.cs",
+              "RelativeToolTip": "..\\DVLDDataAccessLayer\\UserData.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAowOoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-21T15:29:10.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsHash.cs",
+              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDDataAccessLayer\\Utils\\clsHash.cs",
+              "RelativeDocumentMoniker": "..\\DVLDDataAccessLayer\\Utils\\clsHash.cs",
+              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDDataAccessLayer\\Utils\\clsHash.cs",
+              "RelativeToolTip": "..\\DVLDDataAccessLayer\\Utils\\clsHash.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-21T15:28:34.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "frmVisionTest.cs",
               "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmVisionTest.cs",
               "RelativeDocumentMoniker": "TestAppointments\\frmVisionTest.cs",
               "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmVisionTest.cs",
               "RelativeToolTip": "TestAppointments\\frmVisionTest.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwDkAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwDAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-19T14:44:31.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "frmVisionTest.cs [Design]",
               "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmVisionTest.cs",
               "RelativeDocumentMoniker": "TestAppointments\\frmVisionTest.cs",
-              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmVisionTest.cs [Design]",
-              "RelativeToolTip": "TestAppointments\\frmVisionTest.cs [Design]",
+              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmVisionTest.cs [Design]*",
+              "RelativeToolTip": "TestAppointments\\frmVisionTest.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T14:42:18.927Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-19T14:42:18.927Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "clsTestAppointment.cs",
               "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDBusinessLayer\\clsTestAppointment.cs",
               "RelativeDocumentMoniker": "..\\DVLDBusinessLayer\\clsTestAppointment.cs",
@@ -88,12 +115,11 @@
               "RelativeToolTip": "..\\DVLDBusinessLayer\\clsTestAppointment.cs",
               "ViewState": "AgIAAHgAAAAAAAAAAAAowIMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T14:24:33.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-19T14:24:33.764Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "frmSechudulVisionTest.cs",
               "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmSechudulVisionTest.cs",
               "RelativeDocumentMoniker": "TestAppointments\\frmSechudulVisionTest.cs",
@@ -106,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frmTakeTest.cs",
               "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\Tests\\frmTakeTest.cs",
               "RelativeDocumentMoniker": "Tests\\frmTakeTest.cs",
@@ -114,36 +140,22 @@
               "RelativeToolTip": "Tests\\frmTakeTest.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAowE8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T14:21:45.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-19T14:21:45.404Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmSechudulVisionTest.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmSechudulVisionTest.cs",
-              "RelativeDocumentMoniker": "TestAppointments\\frmSechudulVisionTest.cs",
-              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmSechudulVisionTest.cs [Design]",
-              "RelativeToolTip": "TestAppointments\\frmSechudulVisionTest.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T14:13:49.201Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "frmTakeTest.cs [Design]",
               "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\Tests\\frmTakeTest.cs",
               "RelativeDocumentMoniker": "Tests\\frmTakeTest.cs",
               "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\Tests\\frmTakeTest.cs [Design]",
               "RelativeToolTip": "Tests\\frmTakeTest.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T14:09:33.873Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-19T14:09:33.873Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "clsTest.cs",
               "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDBusinessLayer\\clsTest.cs",
               "RelativeDocumentMoniker": "..\\DVLDBusinessLayer\\clsTest.cs",
@@ -151,12 +163,11 @@
               "RelativeToolTip": "..\\DVLDBusinessLayer\\clsTest.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAowDEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T13:55:17.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-19T13:55:17.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "TestsData.cs",
               "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDDataAccessLayer\\TestsData.cs",
               "RelativeDocumentMoniker": "..\\DVLDDataAccessLayer\\TestsData.cs",
@@ -164,8 +175,7 @@
               "RelativeToolTip": "..\\DVLDDataAccessLayer\\TestsData.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAowC8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T13:12:17.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-19T13:12:17.552Z"
             }
           ]
         }

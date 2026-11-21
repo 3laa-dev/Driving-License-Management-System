@@ -55,6 +55,7 @@
     <Compile Include="TestsData.cs" />
     <Compile Include="TestTypesData.cs" />
     <Compile Include="UserData.cs" />
+    <Compile Include="Utils\clsHash.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
