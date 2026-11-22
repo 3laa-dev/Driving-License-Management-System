@@ -30,7 +30,6 @@ C:\Users\alaa\source\repos\DVLD\obj\Debug\DVLD.Applications.ApplicationTypes.frm
 C:\Users\alaa\source\repos\DVLD\obj\Debug\DVLD.TestTypes.frmManageTestTypes.resources
 C:\Users\alaa\source\repos\DVLD\obj\Debug\DVLD.TestTypes.frmUpdateTestType.resources
 C:\Users\alaa\source\repos\DVLD\obj\Debug\DVLD.Applications.NewApplication.frmNewDrivingLicese.resources
-C:\Users\alaa\source\repos\DVLD_Project\DVLD\bin\Debug\DVLD.exe.config
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\bin\Debug\DVLD.exe
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\bin\Debug\DVLD.pdb
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\bin\Debug\DVLDBusinessLayer.dll
@@ -68,3 +67,4 @@ C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.Componenets.ctrlLoca
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.Tests.frmVisionTest.resources
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.TestAppointments.frmSechudulVisionTest.resources
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.Tests.frmTakeTest.resources
+C:\Users\alaa\source\repos\DVLD_Project\DVLD\bin\Debug\DVLD.exe.config
