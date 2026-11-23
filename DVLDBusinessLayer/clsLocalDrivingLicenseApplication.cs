@@ -18,7 +18,7 @@ namespace DVLDBusinessLayer
         public clsLicenseClass LicenseClass;
         
 
-        public clsLocalDrivingLicenseApplication(int CreatedByUserID):base(CreatedByUserID) {
+        public clsLocalDrivingLicenseApplication():base() {
             this.LocalDrivingLicenseApplicationID =  - 1;
             this.LicenseClassID = -1;
             this.LicenseClass = null;
@@ -78,7 +78,14 @@ namespace DVLDBusinessLayer
             switch (Mode)
             {
                 case enMode.AddNew:
-                    return _CreateNewLocalDrivingLicenseApplication();
+                    if (_CreateNewLocalDrivingLicenseApplication())
+                    {
+                        this.Mode = enMode.Update;
+                        return true;
+                    }
+                    else { 
+                        return false;
+                    }
                 case enMode.Update:
                     return false;
                 default:

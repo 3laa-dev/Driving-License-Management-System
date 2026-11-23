@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace DVLDDataAccessLayer
 {
@@ -48,22 +49,24 @@ namespace DVLDDataAccessLayer
             return ID;
         }
 
-        public static int PassedTest(int PersonID)
+        public static int CountTest(int PersonID , bool? isPassed)
         {
             int result;
+
             using (SqlConnection conn = new SqlConnection(DatabaseSettings.ConnectionString))
             {
-                string query = @"SELECT COUNT(*) AS CountOfPassedTests FROM Tests
+                string query = $@"SELECT COUNT(*) AS CountOfPassedTests FROM Tests
                                     INNER JOIN TestAppointments 
                                     ON TestAppointments.TestAppointmentID = Tests.TestAppointmentID
                                     INNER JOIN LocalDrivingLicenseApplications
                                     ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicesenseApplicationID
                                     INNER JOIN Applications
                                     ON Applications.ApplicationID = LocalDrivingLicenseApplications.ApplicationID
-                                    WHERE Applications.ApplicationPersonID = @PersonID AND Tests.TestResult = 1;";
+                                    WHERE Applications.ApplicationPersonID = @PersonID AND Tests.TestResult = @isPassed";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn)) { 
-                    cmd.Parameters.AddWithValue("PersonID" , PersonID);
+                    cmd.Parameters.AddWithValue("@PersonID" , PersonID);
+                    cmd.Parameters.AddWithValue("@isPassed", isPassed);
                     try
                     {
                         conn.Open();

@@ -81,13 +81,13 @@ namespace DVLD.Applications.NewApplication
                     IsPersonRegisteredForLocalDrivingLicenseApplication
                     (ctrlPersonCardWithFilter1.person.PersonID , (int)cbLicenseClass.SelectedValue))
             {
-                clsLocalDrivingLicenseApplication NewApp = new clsLocalDrivingLicenseApplication(clsGlobal.CurrentUser.UserID);
+                clsLocalDrivingLicenseApplication NewApp = new clsLocalDrivingLicenseApplication();
                 NewApp.ApplicationPersonID = this.person.PersonID;
                 NewApp.ApplicationDate = DateTime.Parse(lbApplicationDate.Text);
                 NewApp.PaidFees = this.app.Fees;
                 NewApp.ApplicationStatus = 0;
                 NewApp.LicenseClassID = (int)cbLicenseClass.SelectedValue;
-
+                NewApp.CreatedByUserID = clsGlobal.CurrentUser.UserID;
                 if (NewApp.Save())
                 {
                     lbApplicationID.Text = NewApp.LocalDrivingLicenseApplicationID.ToString();

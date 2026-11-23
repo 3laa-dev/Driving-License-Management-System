@@ -15,23 +15,47 @@ namespace DVLD.TestAppointments
     public delegate void RefreshPageHandler();
     public partial class frmSechudulVisionTest : Form
     {
+        enum enTestMode { NormalTest , RetakeTest }
+
+        enTestMode Mode;
         public event RefreshPageHandler refreshHandler ;
         clsTestAppointment testAppointment;
         clsLocalDrivingLicenseApplication _application;
+        clsApplication RetakeTestApplication;
+
+
         public frmSechudulVisionTest(clsLocalDrivingLicenseApplication application)
         {
             InitializeComponent();
             _application = application;
+            this.Mode = enTestMode.NormalTest;
+        }
+        public frmSechudulVisionTest(clsLocalDrivingLicenseApplication application , clsApplication RetakeTestApplication)
+        {
+            InitializeComponent();
+            _application = application;
+            this.Mode = enTestMode.RetakeTest;
+            this.RetakeTestApplication = RetakeTestApplication;
+
         }
 
         private void frmSechudulVisionTest_Load(object sender, EventArgs e)
         {
+            
+
             lbID.Text = _application.LocalDrivingLicenseApplicationID.ToString();
             LbFullName.Text = _application.Person.FullName;
             lbClass.Text = _application.Type.Title;
             lbFees.Text = _application.PaidFees.ToString();
+            lbTotalFees.Text = _application.PaidFees.ToString();
             lbTrail.Text = "0";
-
+            if (this.Mode == enTestMode.RetakeTest)
+            {
+                lbTilte.Text = "ReTake Test";
+                lbTotalFees.Text = $"{_application.PaidFees + RetakeTestApplication.PaidFees}";
+                lbRtestFees.Text = RetakeTestApplication.PaidFees.ToString();
+                groupBox1.Enabled = true ;
+            }
             testAppointment = new clsTestAppointment();
             testAppointment.LocalDrivingLicesenseApplicationID = _application.LocalDrivingLicenseApplicationID;
             testAppointment.PaidFees = _application.PaidFees;
@@ -54,6 +78,11 @@ namespace DVLD.TestAppointments
             if (testAppointment.Save())
             {
                 MessageBox.Show("Appointment Saved Successfully");
+                if (this.Mode == enTestMode.RetakeTest)
+                {
+                    lbRTestID.Text = RetakeTestApplication.ApplicationID.ToString();
+
+                }
             }
             else {
                 MessageBox.Show("Appointment Save Failed");

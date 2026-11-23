@@ -1,4 +1,5 @@
-﻿using DVLD.TestAppointments;
+﻿using DVLD.Auth;
+using DVLD.TestAppointments;
 using DVLDBusinessLayer;
 using System;
 using System.Collections.Generic;
@@ -29,18 +30,45 @@ namespace DVLD.Tests
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmSechudulVisionTest frm;
+
             if (clsTestAppointment.hasActiveAppointment(_application.LocalDrivingLicenseApplicationID))
             {
                 MessageBox.Show("This Person Alleady have Active Appointment");
             }
+            else if (ctrlLocalDrivingLicesnseApplication1.PassedTests >= 1)
+            {
+                MessageBox.Show("This Person Alleady Passed Test Before");
+            }
+            else if (clsTest.CountFailedTests(_application.Person) > 0) { 
+                clsApplication app = new clsApplication();
+                app.ApplicationStatus = 0;
+                app.ApplicationDate = DateTime.Now;
+                app.CreatedByUserID = clsGlobal.CurrentUser.UserID; 
+                app.ApplicationTypeID = 1;
+
+                app.ApplicationPersonID = _application.ApplicationPersonID;
+                app.ApplicationTypeID = 7;
+                app.PaidFees = clsApplicationType.Find(7).Fees;
+
+                if (app.Save())
+                {
+                    frmSechudulVisionTest frm = new frmSechudulVisionTest(_application , app);
+                    frm.refreshHandler += refresh;
+                    frm.ShowDialog();
+                }
+                else {
+                    MessageBox.Show("Error:Connot Retake Test");
+                }
+                    
+            
+            }
             else
             {
-               
-                frm = new frmSechudulVisionTest(_application);
+
+                frmSechudulVisionTest frm = new frmSechudulVisionTest(_application);
                 frm.refreshHandler += refresh;
                 frm.ShowDialog();
-                
+
             }
             
         }

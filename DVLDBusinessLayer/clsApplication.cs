@@ -23,7 +23,7 @@ namespace DVLDBusinessLayer
         public clsUser User { set; get; }
         public clsApplicationType Type { set; get; }
         
-        public clsApplication(int CreatedByUserID) {
+        public clsApplication() {
             this.ApplicationPersonID = -1;
             this.ApplicationTypeID = -1;
             this.ApplicationDate = DateTime.Now;
@@ -31,7 +31,7 @@ namespace DVLDBusinessLayer
             this.PaidFees = 0;
             this.LastStatusDate = DateTime.Now;
             this.Mode = enMode.AddNew;
-            this.CreatedByUserID = CreatedByUserID;
+            this.CreatedByUserID = -1;
             this.ApplicationID = -1;
             this.Person = null;
             this.User = null;
@@ -58,7 +58,48 @@ namespace DVLDBusinessLayer
         public  static  bool CancelApplication(int applicationID) { 
             return ApplicationsData.CancelApplication(applicationID);
         }
-        
 
+        private bool _UpdateApplication() {
+            return ApplicationsData.UpdateApplication(
+            this.ApplicationID,
+            this.ApplicationPersonID,
+            this.CreatedByUserID,
+            this.ApplicationTypeID,
+            this.ApplicationDate,
+            this.ApplicationStatus,
+            this.LastStatusDate,
+            this.PaidFees);
+        }
+
+        private bool _CreateApplication() {
+            this.ApplicationID =
+                 ApplicationsData.CreateApplication(
+                       this.ApplicationPersonID,
+                       this.CreatedByUserID,
+                       this.ApplicationTypeID,
+                       this.ApplicationDate,
+                       this.ApplicationStatus,
+                       this.LastStatusDate,
+                       this.PaidFees);
+            return this.ApplicationID != -1;
+        }
+
+        public bool Save()
+        {
+            switch (Mode)
+            {
+                case enMode.AddNew:
+                    if (_CreateApplication()) { 
+                        this.Mode = enMode.Update; 
+                        return true ;
+                    }
+                    return false;
+                case enMode.Update:
+                    return false;
+                default:
+                    return false;
+            }
+
+        }
     }
 }

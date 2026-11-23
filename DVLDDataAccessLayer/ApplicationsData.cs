@@ -63,6 +63,7 @@ namespace DVLDDataAccessLayer
             sqlCommand.Parameters.AddWithValue("@ApplicationStatus", ApplicationStatus);
             sqlCommand.Parameters.AddWithValue("@LastStatusDate", LastStatusDate);
             sqlCommand.Parameters.AddWithValue("@PaidFees", PaidFees);
+            sqlCommand.Parameters.AddWithValue("@CreatedByUserID", CreatedByUserID);
             int ApplicationID = -1;
             try
             {
@@ -79,7 +80,7 @@ namespace DVLDDataAccessLayer
                 }
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 ApplicationID = -1;
             }

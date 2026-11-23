@@ -17,11 +17,12 @@ namespace DVLD.Componenets
         {
             InitializeComponent();
         }
-
+        public int PassedTests { set; get; }
         public void loadLocalDrivingLiceseApplication(clsLocalDrivingLicenseApplication application) {
             lbID.Text = application.ApplicationID.ToString();
             lbClass.Text = application.LicenseClassID.ToString();
-            lbPassedTests.Text = $"{clsTest.CountOfPassedTests(application.Person)}/3";
+            PassedTests = clsTest.CountOfPassedTests(application.Person);
+            lbPassedTests.Text = $"{PassedTests}/3";
             ctrlApplicationInfo1.loadApplication(application);    
         }
 
