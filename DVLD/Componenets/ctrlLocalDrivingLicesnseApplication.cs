@@ -21,7 +21,13 @@ namespace DVLD.Componenets
         public void loadLocalDrivingLiceseApplication(clsLocalDrivingLicenseApplication application) {
             lbID.Text = application.ApplicationID.ToString();
             lbClass.Text = application.LicenseClassID.ToString();
+            lbPassedTests.Text = $"{clsTest.CountOfPassedTests(application.Person)}/3";
             ctrlApplicationInfo1.loadApplication(application);    
+        }
+
+        private void ctrlLocalDrivingLicesnseApplication_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

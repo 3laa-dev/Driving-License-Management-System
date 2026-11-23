@@ -115,7 +115,7 @@ namespace DVLDBusinessLayer
                         return true;
                     }
                     else {
-                        return false;
+                        return _UpdateTestAppointment();
                     }
 
                 case enMode.Update:

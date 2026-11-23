@@ -90,6 +90,12 @@
     <Compile Include="Componenets\ctrlUserCard.Designer.cs">
       <DependentUpon>ctrlUserCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestAppointments\frmEditVisionTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestAppointments\frmEditVisionTest.Designer.cs">
+      <DependentUpon>frmEditVisionTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="TestAppointments\frmSechudulVisionTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="People\frmAddNewUpdatePerson.resx">
       <DependentUpon>frmAddNewUpdatePerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestAppointments\frmEditVisionTest.resx">
+      <DependentUpon>frmEditVisionTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestAppointments\frmSechudulVisionTest.resx">
       <DependentUpon>frmSechudulVisionTest.cs</DependentUpon>

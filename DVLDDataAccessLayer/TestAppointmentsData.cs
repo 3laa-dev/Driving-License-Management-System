@@ -110,7 +110,7 @@ namespace DVLDDataAccessLayer
         {
             bool isUpdated;
 
-            using (SqlConnection conn = new SqlConnection())
+            using (SqlConnection conn = new SqlConnection(DatabaseSettings.ConnectionString))
             {
                 string query = @"UPDATE TestAppointments 
                                 	SET TestTypeID = @TestTypeID , 
@@ -118,7 +118,7 @@ namespace DVLDDataAccessLayer
                                 		AppointmentDate = @AppointmentDate , 
                                 		PaidFees =  @PaidFees ,
                                 		CreatedByUserID = @CreatedByUserID, 
-                                		isLocked =  @isLoc1ked
+                                		isLocked =  @isLocked
                                 WHERE TestAppointmentID = @TestAppointmentID";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {

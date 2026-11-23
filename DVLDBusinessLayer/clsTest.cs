@@ -29,7 +29,13 @@ namespace DVLDBusinessLayer
             return this.TestID != -1;
         }
 
-
+        public static int CountOfPassedTests(Person person) {
+            return TestsData.PassedTest(person.PersonID);
+        }
+        public static int CountOfPassedTests(int  personID)
+        {
+            return TestsData.PassedTest(personID);
+        }
         public bool Save() {
             switch (this.Mode)
             {
