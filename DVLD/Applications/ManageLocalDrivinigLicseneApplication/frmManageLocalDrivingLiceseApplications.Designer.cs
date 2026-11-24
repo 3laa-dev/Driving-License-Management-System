@@ -39,10 +39,12 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cancelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.countOfRecords = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.schedualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sechedualVisionTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.countOfRecords = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.schedualWritenTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.schedualStreetTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -130,14 +132,35 @@
             this.schedualToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(215, 84);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // cancelToolStripMenuItem
             // 
             this.cancelToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cancelToolStripMenuItem.Image")));
             this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
-            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.cancelToolStripMenuItem.Text = "Cancel";
             this.cancelToolStripMenuItem.Click += new System.EventHandler(this.cancelToolStripMenuItem_Click);
+            // 
+            // schedualToolStripMenuItem
+            // 
+            this.schedualToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sechedualVisionTestToolStripMenuItem,
+            this.schedualWritenTestToolStripMenuItem,
+            this.schedualStreetTestToolStripMenuItem});
+            this.schedualToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("schedualToolStripMenuItem.Image")));
+            this.schedualToolStripMenuItem.Name = "schedualToolStripMenuItem";
+            this.schedualToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.schedualToolStripMenuItem.Text = "Schedual Tests";
+            this.schedualToolStripMenuItem.Click += new System.EventHandler(this.schedualToolStripMenuItem_Click);
+            // 
+            // sechedualVisionTestToolStripMenuItem
+            // 
+            this.sechedualVisionTestToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sechedualVisionTestToolStripMenuItem.Image")));
+            this.sechedualVisionTestToolStripMenuItem.Name = "sechedualVisionTestToolStripMenuItem";
+            this.sechedualVisionTestToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.sechedualVisionTestToolStripMenuItem.Text = "Schedual Vision Test";
+            this.sechedualVisionTestToolStripMenuItem.Click += new System.EventHandler(this.sechedualVisionTestToolStripMenuItem_Click);
             // 
             // countOfRecords
             // 
@@ -159,22 +182,19 @@
             this.label3.TabIndex = 28;
             this.label3.Text = "#Recors:";
             // 
-            // schedualToolStripMenuItem
+            // schedualWritenTestToolStripMenuItem
             // 
-            this.schedualToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sechedualVisionTestToolStripMenuItem});
-            this.schedualToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("schedualToolStripMenuItem.Image")));
-            this.schedualToolStripMenuItem.Name = "schedualToolStripMenuItem";
-            this.schedualToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
-            this.schedualToolStripMenuItem.Text = "Sechedual Tests";
+            this.schedualWritenTestToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("schedualWritenTestToolStripMenuItem.Image")));
+            this.schedualWritenTestToolStripMenuItem.Name = "schedualWritenTestToolStripMenuItem";
+            this.schedualWritenTestToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.schedualWritenTestToolStripMenuItem.Text = "Schedual Written Test";
             // 
-            // sechedualVisionTestToolStripMenuItem
+            // schedualStreetTestToolStripMenuItem
             // 
-            this.sechedualVisionTestToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sechedualVisionTestToolStripMenuItem.Image")));
-            this.sechedualVisionTestToolStripMenuItem.Name = "sechedualVisionTestToolStripMenuItem";
-            this.sechedualVisionTestToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
-            this.sechedualVisionTestToolStripMenuItem.Text = "Sechedual Vision Test";
-            this.sechedualVisionTestToolStripMenuItem.Click += new System.EventHandler(this.sechedualVisionTestToolStripMenuItem_Click);
+            this.schedualStreetTestToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("schedualStreetTestToolStripMenuItem.Image")));
+            this.schedualStreetTestToolStripMenuItem.Name = "schedualStreetTestToolStripMenuItem";
+            this.schedualStreetTestToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.schedualStreetTestToolStripMenuItem.Text = "Schedual Street Test";
             // 
             // frmManageLocalDrivingLiceseApplications
             // 
@@ -215,5 +235,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ToolStripMenuItem schedualToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sechedualVisionTestToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem schedualWritenTestToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem schedualStreetTestToolStripMenuItem;
     }
 }

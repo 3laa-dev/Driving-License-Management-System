@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace DVLD.Componenets
 {
@@ -17,18 +18,16 @@ namespace DVLD.Componenets
         {
             InitializeComponent();
         }
+        
         public int PassedTests { set; get; }
         public void loadLocalDrivingLiceseApplication(clsLocalDrivingLicenseApplication application) {
             lbID.Text = application.ApplicationID.ToString();
             lbClass.Text = application.LicenseClassID.ToString();
-            PassedTests = clsTest.CountOfPassedTests(application.Person);
+            PassedTests = clsTest.CountOfPassedTests(application.Person.PersonID, application.ApplicationID );
             lbPassedTests.Text = $"{PassedTests}/3";
             ctrlApplicationInfo1.loadApplication(application);    
         }
 
-        private void ctrlLocalDrivingLicesnseApplication_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

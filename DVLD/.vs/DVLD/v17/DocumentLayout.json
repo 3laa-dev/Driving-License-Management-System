@@ -3,37 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\tests\\frmtaketest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:tests\\frmtaketest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88CEB1E4-11BA-4B70-83EE-064EE7E1E6AB}|..\\DVLDBusinessLayer\\DVLDBusinessLayer.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvldbusinesslayer\\clslocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CEB1E4-11BA-4B70-83EE-064EE7E1E6AB}|..\\DVLDBusinessLayer\\DVLDBusinessLayer.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvldbusinesslayer\\clsapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\testappointments\\vision\\frmvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:testappointments\\vision\\frmvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\testappointments\\vision\\frmvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:testappointments\\vision\\frmvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\applications\\managelocaldriviniglicseneapplication\\frmmanagelocaldrivingliceseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:applications\\managelocaldriviniglicseneapplication\\frmmanagelocaldrivingliceseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\applications\\managelocaldriviniglicseneapplication\\frmmanagelocaldrivingliceseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:applications\\managelocaldriviniglicseneapplication\\frmmanagelocaldrivingliceseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\tests\\frmtaketest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:tests\\frmtaketest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\testappointments\\frmsechudulvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:testappointments\\frmsechudulvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\testappointments\\frmsechudulvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:testappointments\\frmsechudulvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{095773CD-7B64-4E0C-A033-9217578A167B}|..\\DVLDDataAccessLayer\\DVLDDataAccessLayer.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvlddataaccesslayer\\applicationsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CEB1E4-11BA-4B70-83EE-064EE7E1E6AB}|..\\DVLDBusinessLayer\\DVLDBusinessLayer.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvldbusinesslayer\\clslocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\testappointments\\frmvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:testappointments\\frmvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvld\\testappointments\\frmvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EDCC42A1-72BE-4BF9-8C77-69767C720894}|DVLD.csproj|solutionrelative:testappointments\\frmvisiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CEB1E4-11BA-4B70-83EE-064EE7E1E6AB}|..\\DVLDBusinessLayer\\DVLDBusinessLayer.csproj|c:\\users\\alaa\\source\\repos\\dvld_project\\dvldbusinesslayer\\clsapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,7 +36,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,118 +47,96 @@
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmTakeTest.cs",
-              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\Tests\\frmTakeTest.cs",
-              "RelativeDocumentMoniker": "Tests\\frmTakeTest.cs",
-              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\Tests\\frmTakeTest.cs",
-              "RelativeToolTip": "Tests\\frmTakeTest.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAawD0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T20:00:23.572Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "clsApplication.cs",
+              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDBusinessLayer\\clsApplication.cs",
+              "RelativeDocumentMoniker": "..\\DVLDBusinessLayer\\clsApplication.cs",
+              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDBusinessLayer\\clsApplication.cs*",
+              "RelativeToolTip": "..\\DVLDBusinessLayer\\clsApplication.cs*",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAuwFgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T20:09:59.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsLocalDrivingLicenseApplication.cs",
+              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDBusinessLayer\\clsLocalDrivingLicenseApplication.cs",
+              "RelativeDocumentMoniker": "..\\DVLDBusinessLayer\\clsLocalDrivingLicenseApplication.cs",
+              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDBusinessLayer\\clsLocalDrivingLicenseApplication.cs*",
+              "RelativeToolTip": "..\\DVLDBusinessLayer\\clsLocalDrivingLicenseApplication.cs*",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwE4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T20:09:27.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "frmTakeTest.cs [Design]",
               "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\Tests\\frmTakeTest.cs",
               "RelativeDocumentMoniker": "Tests\\frmTakeTest.cs",
               "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\Tests\\frmTakeTest.cs [Design]",
               "RelativeToolTip": "Tests\\frmTakeTest.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T20:00:22.029Z",
+              "WhenOpened": "2026-11-24T19:59:17.319Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmVisionTest.cs",
-              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmVisionTest.cs",
-              "RelativeDocumentMoniker": "TestAppointments\\frmVisionTest.cs",
-              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmVisionTest.cs",
-              "RelativeToolTip": "TestAppointments\\frmVisionTest.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAADgvzYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T19:43:42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmVisionTest.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmVisionTest.cs",
-              "RelativeDocumentMoniker": "TestAppointments\\frmVisionTest.cs",
-              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmVisionTest.cs [Design]",
-              "RelativeToolTip": "TestAppointments\\frmVisionTest.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T19:43:40.136Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmSechudulVisionTest.cs",
-              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmSechudulVisionTest.cs",
-              "RelativeDocumentMoniker": "TestAppointments\\frmSechudulVisionTest.cs",
-              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmSechudulVisionTest.cs",
-              "RelativeToolTip": "TestAppointments\\frmSechudulVisionTest.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAEwE0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:19:52.437Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmSechudulVisionTest.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmSechudulVisionTest.cs",
-              "RelativeDocumentMoniker": "TestAppointments\\frmSechudulVisionTest.cs",
-              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\frmSechudulVisionTest.cs [Design]",
-              "RelativeToolTip": "TestAppointments\\frmSechudulVisionTest.cs [Design]",
+              "Title": "frmVisionTest.cs",
+              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\Vision\\frmVisionTest.cs",
+              "RelativeDocumentMoniker": "TestAppointments\\Vision\\frmVisionTest.cs",
+              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\Vision\\frmVisionTest.cs",
+              "RelativeToolTip": "TestAppointments\\Vision\\frmVisionTest.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAAHkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:16:26.668Z",
+              "WhenOpened": "2026-11-24T19:55:14.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmVisionTest.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\Vision\\frmVisionTest.cs",
+              "RelativeDocumentMoniker": "TestAppointments\\Vision\\frmVisionTest.cs",
+              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\TestAppointments\\Vision\\frmVisionTest.cs [Design]",
+              "RelativeToolTip": "TestAppointments\\Vision\\frmVisionTest.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T19:55:13.105Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "clsLocalDrivingLicenseApplication.cs",
-              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDBusinessLayer\\clsLocalDrivingLicenseApplication.cs",
-              "RelativeDocumentMoniker": "..\\DVLDBusinessLayer\\clsLocalDrivingLicenseApplication.cs",
-              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDBusinessLayer\\clsLocalDrivingLicenseApplication.cs",
-              "RelativeToolTip": "..\\DVLDBusinessLayer\\clsLocalDrivingLicenseApplication.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAUwFYAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:07:29.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ApplicationsData.cs",
-              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDDataAccessLayer\\ApplicationsData.cs",
-              "RelativeDocumentMoniker": "..\\DVLDDataAccessLayer\\ApplicationsData.cs",
-              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDDataAccessLayer\\ApplicationsData.cs",
-              "RelativeToolTip": "..\\DVLDDataAccessLayer\\ApplicationsData.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAADgv0EAAABSAAAAAAAAAA==",
+              "Title": "frmManageLocalDrivingLiceseApplications.cs",
+              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\Applications\\ManageLocalDrivinigLicseneApplication\\frmManageLocalDrivingLiceseApplications.cs",
+              "RelativeDocumentMoniker": "Applications\\ManageLocalDrivinigLicseneApplication\\frmManageLocalDrivingLiceseApplications.cs",
+              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\Applications\\ManageLocalDrivinigLicseneApplication\\frmManageLocalDrivingLiceseApplications.cs",
+              "RelativeToolTip": "Applications\\ManageLocalDrivinigLicseneApplication\\frmManageLocalDrivingLiceseApplications.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswEoAAACRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:01:26.184Z",
+              "WhenOpened": "2026-11-24T19:53:08.506Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "clsApplication.cs",
-              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDBusinessLayer\\clsApplication.cs",
-              "RelativeDocumentMoniker": "..\\DVLDBusinessLayer\\clsApplication.cs",
-              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLDBusinessLayer\\clsApplication.cs",
-              "RelativeToolTip": "..\\DVLDBusinessLayer\\clsApplication.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAswEoAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "frmManageLocalDrivingLiceseApplications.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\Applications\\ManageLocalDrivinigLicseneApplication\\frmManageLocalDrivingLiceseApplications.cs",
+              "RelativeDocumentMoniker": "Applications\\ManageLocalDrivinigLicseneApplication\\frmManageLocalDrivingLiceseApplications.cs",
+              "ToolTip": "C:\\Users\\alaa\\source\\repos\\DVLD_Project\\DVLD\\Applications\\ManageLocalDrivinigLicseneApplication\\frmManageLocalDrivingLiceseApplications.cs [Design]",
+              "RelativeToolTip": "Applications\\ManageLocalDrivinigLicseneApplication\\frmManageLocalDrivingLiceseApplications.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T17:39:24.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-24T19:53:04.578Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

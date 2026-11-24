@@ -15,6 +15,7 @@ namespace DVLD.Applications.ManageLocalDrivinigLicseneApplication
 {
     public partial class frmManageLocalDrivingLiceseApplications : Form
     {
+        
         public frmManageLocalDrivingLiceseApplications()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace DVLD.Applications.ManageLocalDrivinigLicseneApplication
         }
         private void frmManageLocalDrivingLiceseApplications_Load(object sender, EventArgs e)
         {
+           // EnableToolStripMenuItems(false , false , false );
             DataTable dataTable = clsLocalDrivingLicenseApplication.GetAllLocalDrivingLicenseApplication();
             dataGridView1.DataSource = dataTable;
 
@@ -58,14 +60,39 @@ namespace DVLD.Applications.ManageLocalDrivinigLicseneApplication
             }
             frmManageLocalDrivingLiceseApplications_Load(sender , e);
         }
-
+        private void EnableToolStripMenuItems(bool Vision, bool Written, bool Street) {
+            sechedualVisionTestToolStripMenuItem.Enabled = Vision;
+            schedualWritenTestToolStripMenuItem.Enabled = Written;
+            schedualStreetTestToolStripMenuItem.Enabled = Street;
+        }
+            
         private void sechedualVisionTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["LocalDrivingLicenseApplicationID"].Value.ToString());
             clsLocalDrivingLicenseApplication app = clsLocalDrivingLicenseApplication.Find(id);
 
-                new frmVisionTest(app).ShowDialog();
+            frmVisionTest frm = new frmVisionTest(app);
+            frm.refreshHandler += () => { dataGridView1.DataSource = clsLocalDrivingLicenseApplication.GetAllLocalDrivingLicenseApplication(); };
+            frm.ShowDialog();
             
+        }
+
+        private void schedualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+            int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["LocalDrivingLicenseApplicationID"].Value.ToString());
+            clsLocalDrivingLicenseApplication app = clsLocalDrivingLicenseApplication.Find(id);
+            int _PassedTests = clsTest.CountOfPassedTests(app.Person.PersonID, app.ApplicationID );
+            if (_PassedTests == 0)
+                EnableToolStripMenuItems(true, false, false);
+            else if (_PassedTests == 1)
+                EnableToolStripMenuItems(false, true, false);
+            else if (_PassedTests == 2)
+                EnableToolStripMenuItems(false, false, true);
         }
     }
 }

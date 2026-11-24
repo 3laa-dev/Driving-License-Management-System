@@ -106,6 +106,8 @@ namespace DVLDBusinessLayer
 
         public bool Save()
         {
+            if(this.isLocked) 
+                return false;
             switch (this.Mode)
             {
                 case enMode.AddNew:

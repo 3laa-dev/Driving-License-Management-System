@@ -90,22 +90,22 @@
     <Compile Include="Componenets\ctrlUserCard.Designer.cs">
       <DependentUpon>ctrlUserCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="TestAppointments\frmEditVisionTest.cs">
+    <Compile Include="TestAppointments\Vision\frmEditVisionTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TestAppointments\frmEditVisionTest.Designer.cs">
+    <Compile Include="TestAppointments\Vision\frmEditVisionTest.Designer.cs">
       <DependentUpon>frmEditVisionTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="TestAppointments\frmSechudulVisionTest.cs">
+    <Compile Include="TestAppointments\Vision\frmSechudulVisionTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TestAppointments\frmSechudulVisionTest.Designer.cs">
+    <Compile Include="TestAppointments\Vision\frmSechudulVisionTest.Designer.cs">
       <DependentUpon>frmSechudulVisionTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="TestAppointments\frmVisionTest.cs">
+    <Compile Include="TestAppointments\Vision\frmVisionTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TestAppointments\frmVisionTest.Designer.cs">
+    <Compile Include="TestAppointments\Vision\frmVisionTest.Designer.cs">
       <DependentUpon>frmVisionTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Tests\frmTakeTest.cs">
@@ -235,13 +235,13 @@
     <EmbeddedResource Include="People\frmAddNewUpdatePerson.resx">
       <DependentUpon>frmAddNewUpdatePerson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TestAppointments\frmEditVisionTest.resx">
+    <EmbeddedResource Include="TestAppointments\Vision\frmEditVisionTest.resx">
       <DependentUpon>frmEditVisionTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TestAppointments\frmSechudulVisionTest.resx">
+    <EmbeddedResource Include="TestAppointments\Vision\frmSechudulVisionTest.resx">
       <DependentUpon>frmSechudulVisionTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TestAppointments\frmVisionTest.resx">
+    <EmbeddedResource Include="TestAppointments\Vision\frmVisionTest.resx">
       <DependentUpon>frmVisionTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\frmTakeTest.resx">
@@ -302,6 +302,9 @@
       <Project>{88ceb1e4-11ba-4b70-83ee-064ee7e1e6ab}</Project>
       <Name>DVLDBusinessLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TestAppointments\Written\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

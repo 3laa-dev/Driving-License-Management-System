@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace DVLDDataAccessLayer
@@ -49,7 +50,7 @@ namespace DVLDDataAccessLayer
             return ID;
         }
 
-        public static int CountTest(int PersonID , bool? isPassed)
+        public static int CountTest(int PersonID ,int ApplicationID, bool? isPassed)
         {
             int result;
 
@@ -62,11 +63,12 @@ namespace DVLDDataAccessLayer
                                     ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicesenseApplicationID
                                     INNER JOIN Applications
                                     ON Applications.ApplicationID = LocalDrivingLicenseApplications.ApplicationID
-                                    WHERE Applications.ApplicationPersonID = @PersonID AND Tests.TestResult = @isPassed";
+                                    WHERE Applications.ApplicationPersonID = @PersonID AND Tests.TestResult = @isPassed AND  Applications.ApplicationID = @Applications";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn)) { 
                     cmd.Parameters.AddWithValue("@PersonID" , PersonID);
                     cmd.Parameters.AddWithValue("@isPassed", isPassed);
+                    cmd.Parameters.AddWithValue("@Applications", ApplicationID);
                     try
                     {
                         conn.Open();

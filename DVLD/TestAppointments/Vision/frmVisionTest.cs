@@ -13,17 +13,20 @@ using System.Windows.Forms;
 
 namespace DVLD.Tests
 {
+    
     public partial class frmVisionTest : Form
     {
+        public event RefreshHandler refreshHandler;
         clsLocalDrivingLicenseApplication _application;
         public frmVisionTest(clsLocalDrivingLicenseApplication application)
         {
             InitializeComponent();
             _application = application;
+            
         }
-
         private void frmVisionTest_Load(object sender, EventArgs e)
         {
+
             ctrlLocalDrivingLicesnseApplication1.loadLocalDrivingLiceseApplication(_application);
             dataGridView1.DataSource = clsTestAppointment.GetTestAppointments(_application.LocalDrivingLicenseApplicationID ,1 );
         }
@@ -39,7 +42,7 @@ namespace DVLD.Tests
             {
                 MessageBox.Show("This Person Alleady Passed Test Before");
             }
-            else if (clsTest.CountFailedTests(_application.Person) > 0) { 
+            else if (clsTest.CountFailedTests(_application.Person.PersonID ,_application.ApplicationID) > 0) { 
                 clsApplication app = new clsApplication();
                 app.ApplicationStatus = 0;
                 app.ApplicationDate = DateTime.Now;
@@ -104,6 +107,19 @@ namespace DVLD.Tests
                 frm.refreshHandler += refresh;
                 frm.ShowDialog();
             }
+        }
+        
+        
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            refreshHandler?.Invoke();
+            this.Close();
         }
     }
 }

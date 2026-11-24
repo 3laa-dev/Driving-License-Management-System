@@ -62,7 +62,7 @@ namespace DVLD.Tests
         {
             Test.Notes = this.Notes;
             Test.TestResult = this.Result;
-            if (Test.Save())
+            if (!_appointment.isLocked &&  Test.Save())
             {
                 MessageBox.Show("Test Saved Successfully");
             }

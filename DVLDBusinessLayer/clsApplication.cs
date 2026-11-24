@@ -84,8 +84,10 @@ namespace DVLDBusinessLayer
             return this.ApplicationID != -1;
         }
 
-        public bool Save()
+        public virtual bool Save()
         {
+            if (this.ApplicationStatus == 2)
+                return false;
             switch (Mode)
             {
                 case enMode.AddNew:
