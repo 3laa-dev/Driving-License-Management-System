@@ -17,8 +17,6 @@ namespace DVLD.TestAppointments
     public partial class frmEditVisionTest : Form
     {
         clsTestAppointment _appointment;
-       
-   
         clsTest Test;
         public event RefreshHandler refreshHandler;
         public frmEditVisionTest(clsTestAppointment appointment)

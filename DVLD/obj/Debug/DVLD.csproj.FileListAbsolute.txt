@@ -72,3 +72,4 @@ C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.TestAppointments.frm
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.TestAppointments.Written.frmWrittenTestAppointment.resources
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.TestAppointments.Written.frmSchedualWrittenTestcs.resources
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.Tests.frmTakeWrittenTest.resources
+C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.TestAppointments.Written.frmEditWrittenTestAppointment.resources

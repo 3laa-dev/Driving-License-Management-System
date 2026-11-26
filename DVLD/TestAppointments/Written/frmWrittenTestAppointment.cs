@@ -98,5 +98,18 @@ namespace DVLD.TestAppointments.Written
             refreshHandler?.Invoke();
             this.Close();
         }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["TestAppointmentID"].Value.ToString());
+            clsTestAppointment appointment = clsTestAppointment.Find(id);
+            if (appointment != null)
+            {
+                
+                frmEditWrittenTestAppointment frm = new frmEditWrittenTestAppointment(appointment);
+                frm.refreshHandler += refresh;
+                frm.ShowDialog();
+            }
+        }
     }
 }
