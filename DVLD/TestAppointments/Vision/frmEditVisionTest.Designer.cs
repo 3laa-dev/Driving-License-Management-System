@@ -90,6 +90,7 @@
             this.dtDate.Name = "dtDate";
             this.dtDate.Size = new System.Drawing.Size(166, 24);
             this.dtDate.TabIndex = 85;
+            this.dtDate.ValueChanged += new System.EventHandler(this.dtDate_ValueChanged);
             // 
             // lbID
             // 

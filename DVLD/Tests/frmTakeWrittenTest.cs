@@ -20,8 +20,7 @@ namespace DVLD.Tests
         clsTest Test;
         public event RefreshHandler refreshHandler;
         public frmTakeWrittenTest(clsTestAppointment appointment)
-        {
-
+        {   
             InitializeComponent();
             _appointment = appointment;
             Test = new clsTest();
@@ -34,6 +33,7 @@ namespace DVLD.Tests
             lbClass.Text = _appointment.LocalDrivingLicenseApplication.Type.Title;
             lbFees.Text = _appointment.PaidFees.ToString();
             lbTrail.Text = "0";
+            lbDate.Text = _appointment.AppointmentDate.ToString();
             this.Notes = string.Empty;
 
             Test.TestAppointmentID = _appointment.TestAppointmentID;
@@ -43,17 +43,14 @@ namespace DVLD.Tests
         {
             this.Result = true;
         }
-
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             this.Result = false;
         }
-
         private void tbNotes_TextChanged(object sender, EventArgs e)
         {
             this.Notes = tbNotes.Text;
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Test.Notes = this.Notes;

@@ -73,3 +73,7 @@ C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.TestAppointments.Wri
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.TestAppointments.Written.frmSchedualWrittenTestcs.resources
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.Tests.frmTakeWrittenTest.resources
 C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.TestAppointments.Written.frmEditWrittenTestAppointment.resources
+C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.TestAppointments.Street.frmSchedualStreetTest.resources
+C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.TestAppointments.Street.frmStreetTestAppointment.resources
+C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.Tests.frmTakeStreetTest.resources
+C:\Users\alaa\source\repos\DVLD_Project\DVLD\obj\Debug\DVLD.TestAppointments.Street.frmEditStreetTest.resources

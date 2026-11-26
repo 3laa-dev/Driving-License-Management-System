@@ -64,5 +64,10 @@ namespace DVLD.TestAppointments
             this.refreshHandler?.Invoke();
             this.Close();
         }
+
+        private void dtDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

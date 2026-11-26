@@ -90,6 +90,24 @@
     <Compile Include="Componenets\ctrlUserCard.Designer.cs">
       <DependentUpon>ctrlUserCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestAppointments\Street\frmEditStreetTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestAppointments\Street\frmEditStreetTest.Designer.cs">
+      <DependentUpon>frmEditStreetTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestAppointments\Street\frmSchedualStreetTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestAppointments\Street\frmSchedualStreetTest.Designer.cs">
+      <DependentUpon>frmSchedualStreetTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestAppointments\Street\frmStreetTestAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestAppointments\Street\frmStreetTestAppointment.Designer.cs">
+      <DependentUpon>frmStreetTestAppointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="TestAppointments\Vision\frmEditVisionTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +143,12 @@
     </Compile>
     <Compile Include="TestAppointments\Written\frmWrittenTestAppointment.Designer.cs">
       <DependentUpon>frmWrittenTestAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\frmTakeStreetTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\frmTakeStreetTest.Designer.cs">
+      <DependentUpon>frmTakeStreetTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Tests\frmTakeTest.cs">
       <SubType>Form</SubType>
@@ -259,6 +283,15 @@
     <EmbeddedResource Include="People\frmAddNewUpdatePerson.resx">
       <DependentUpon>frmAddNewUpdatePerson.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TestAppointments\Street\frmEditStreetTest.resx">
+      <DependentUpon>frmEditStreetTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestAppointments\Street\frmSchedualStreetTest.resx">
+      <DependentUpon>frmSchedualStreetTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestAppointments\Street\frmStreetTestAppointment.resx">
+      <DependentUpon>frmStreetTestAppointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TestAppointments\Vision\frmEditVisionTest.resx">
       <DependentUpon>frmEditVisionTest.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TestAppointments\Written\frmWrittenTestAppointment.resx">
       <DependentUpon>frmWrittenTestAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tests\frmTakeStreetTest.resx">
+      <DependentUpon>frmTakeStreetTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\frmTakeTest.resx">
       <DependentUpon>frmTakeTest.cs</DependentUpon>
@@ -339,8 +375,6 @@
       <Name>DVLDBusinessLayer</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TestAppointments\NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

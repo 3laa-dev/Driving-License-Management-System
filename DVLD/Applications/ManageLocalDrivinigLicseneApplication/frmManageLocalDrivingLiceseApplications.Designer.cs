@@ -152,6 +152,7 @@
             this.schedualToolStripMenuItem.Name = "schedualToolStripMenuItem";
             this.schedualToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.schedualToolStripMenuItem.Text = "Schedual Tests";
+            this.schedualToolStripMenuItem.Click += new System.EventHandler(this.schedualToolStripMenuItem_Click);
             // 
             // sechedualVisionTestToolStripMenuItem
             // 
@@ -175,6 +176,7 @@
             this.schedualStreetTestToolStripMenuItem.Name = "schedualStreetTestToolStripMenuItem";
             this.schedualStreetTestToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
             this.schedualStreetTestToolStripMenuItem.Text = "Schedual Street Test";
+            this.schedualStreetTestToolStripMenuItem.Click += new System.EventHandler(this.schedualStreetTestToolStripMenuItem_Click);
             // 
             // countOfRecords
             // 

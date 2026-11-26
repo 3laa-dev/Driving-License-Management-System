@@ -56,7 +56,7 @@ namespace DVLD.TestAppointments.Written
             testAppointment = new clsTestAppointment();
             testAppointment.LocalDrivingLicesenseApplicationID = _application.LocalDrivingLicenseApplicationID;
             testAppointment.PaidFees = _application.PaidFees;
-            testAppointment.TestTypeID = 2;
+            testAppointment.TestTypeID = 3;
             testAppointment.LocalDrivingLicesenseApplicationID = _application.LocalDrivingLicenseApplicationID;
             testAppointment.CreatedByUserID = clsGlobal.CurrentUser.UserID;
             testAppointment.isLocked = false;

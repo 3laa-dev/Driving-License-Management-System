@@ -47,7 +47,6 @@ namespace DVLD.Tests
                 app.ApplicationStatus = 0;
                 app.ApplicationDate = DateTime.Now;
                 app.CreatedByUserID = clsGlobal.CurrentUser.UserID; 
-                app.ApplicationTypeID = 1;
 
                 app.ApplicationPersonID = _application.ApplicationPersonID;
                 app.ApplicationTypeID = 7;

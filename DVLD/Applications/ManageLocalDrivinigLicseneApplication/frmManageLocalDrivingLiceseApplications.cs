@@ -1,4 +1,5 @@
-﻿using DVLD.TestAppointments.Written;
+﻿using DVLD.TestAppointments.Street;
+using DVLD.TestAppointments.Written;
 using DVLD.Tests;
 using DVLDBusinessLayer;
 using System;
@@ -62,11 +63,17 @@ namespace DVLD.Applications.ManageLocalDrivinigLicseneApplication
             frmManageLocalDrivingLiceseApplications_Load(sender , e);
         }
         private void EnableToolStripMenuItems(bool Vision, bool Written, bool Street) {
+            schedualToolStripMenuItem.Enabled = true;
             sechedualVisionTestToolStripMenuItem.Enabled = Vision;
             schedualWritenTestToolStripMenuItem.Enabled = Written;
             schedualStreetTestToolStripMenuItem.Enabled = Street;
         }
-            
+
+        private void EnableToolStripMenuItems(bool SchedualTests)
+        {
+            schedualToolStripMenuItem.Enabled = SchedualTests;
+        }
+
         private void sechedualVisionTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["LocalDrivingLicenseApplicationID"].Value.ToString());
@@ -82,15 +89,20 @@ namespace DVLD.Applications.ManageLocalDrivinigLicseneApplication
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
-            int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["LocalDrivingLicenseApplicationID"].Value.ToString());
-            clsLocalDrivingLicenseApplication app = clsLocalDrivingLicenseApplication.Find(id);
-            int _PassedTests = clsTest.CountOfPassedTests(app.Person.PersonID, app.ApplicationID );
+            int _PassedTests = Convert.ToInt32(dataGridView1.CurrentRow.Cells["PassedTests"].Value.ToString());
+            
             if (_PassedTests == 0)
                 EnableToolStripMenuItems(true, false, false);
             else if (_PassedTests == 1)
                 EnableToolStripMenuItems(false, true, false);
             else if (_PassedTests == 2)
                 EnableToolStripMenuItems(false, false, true);
+            else if( _PassedTests == 3)
+                EnableToolStripMenuItems(false);
+
+            bool isCancelled = (dataGridView1.CurrentRow.Cells["ApplicationStatus"].Value.ToString() == "Cancelled");
+            if (isCancelled)
+                contextMenuStrip1.Enabled = false;
         }
 
         private void schedualWritenTestToolStripMenuItem_Click(object sender, EventArgs e)
@@ -101,6 +113,21 @@ namespace DVLD.Applications.ManageLocalDrivinigLicseneApplication
             frmWrittenTestAppointment frm = new frmWrittenTestAppointment(app);
             frm.refreshHandler += () => { dataGridView1.DataSource = clsLocalDrivingLicenseApplication.GetAllLocalDrivingLicenseApplication(); };
             frm.ShowDialog();
+        }
+
+        private void schedualStreetTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["LocalDrivingLicenseApplicationID"].Value.ToString());
+            clsLocalDrivingLicenseApplication app = clsLocalDrivingLicenseApplication.Find(id);
+
+            frmStreetTestAppointment frm = new frmStreetTestAppointment(app);
+            frm.refreshHandler += () => { dataGridView1.DataSource = clsLocalDrivingLicenseApplication.GetAllLocalDrivingLicenseApplication(); };
+            frm.ShowDialog();
+        }
+
+        private void schedualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
