@@ -131,7 +131,7 @@ namespace DVLDDataAccessLayer
 
             SqlCommand command = new SqlCommand(query, conn);
 
-            command.Parameters.AddWithValue("@value", value+"%");
+            command.Parameters.AddWithValue("@value", "%"+value+"%");
 
             DataTable dataTable = new DataTable();
 

@@ -1,4 +1,5 @@
-﻿using DVLD.Tests;
+﻿using DVLD.TestAppointments.Written;
+using DVLD.Tests;
 using DVLDBusinessLayer;
 using System;
 using System.Collections.Generic;
@@ -77,10 +78,7 @@ namespace DVLD.Applications.ManageLocalDrivinigLicseneApplication
             
         }
 
-        private void schedualToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
@@ -93,6 +91,16 @@ namespace DVLD.Applications.ManageLocalDrivinigLicseneApplication
                 EnableToolStripMenuItems(false, true, false);
             else if (_PassedTests == 2)
                 EnableToolStripMenuItems(false, false, true);
+        }
+
+        private void schedualWritenTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["LocalDrivingLicenseApplicationID"].Value.ToString());
+            clsLocalDrivingLicenseApplication app = clsLocalDrivingLicenseApplication.Find(id);
+
+            frmWrittenTestAppointment frm = new frmWrittenTestAppointment(app);
+            frm.refreshHandler += () => { dataGridView1.DataSource = clsLocalDrivingLicenseApplication.GetAllLocalDrivingLicenseApplication(); };
+            frm.ShowDialog();
         }
     }
 }

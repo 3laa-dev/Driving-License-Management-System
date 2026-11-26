@@ -108,11 +108,29 @@
     <Compile Include="TestAppointments\Vision\frmVisionTest.Designer.cs">
       <DependentUpon>frmVisionTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestAppointments\Written\frmSchedualWrittenTestcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestAppointments\Written\frmSchedualWrittenTestcs.Designer.cs">
+      <DependentUpon>frmSchedualWrittenTestcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestAppointments\Written\frmWrittenTestAppointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TestAppointments\Written\frmWrittenTestAppointment.Designer.cs">
+      <DependentUpon>frmWrittenTestAppointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tests\frmTakeTest.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tests\frmTakeTest.Designer.cs">
       <DependentUpon>frmTakeTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\frmTakeWrittenTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\frmTakeWrittenTest.Designer.cs">
+      <DependentUpon>frmTakeWrittenTest.cs</DependentUpon>
     </Compile>
     <Compile Include="TestTypes\frmManageTestTypes.cs">
       <SubType>Form</SubType>
@@ -244,8 +262,17 @@
     <EmbeddedResource Include="TestAppointments\Vision\frmVisionTest.resx">
       <DependentUpon>frmVisionTest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TestAppointments\Written\frmSchedualWrittenTestcs.resx">
+      <DependentUpon>frmSchedualWrittenTestcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestAppointments\Written\frmWrittenTestAppointment.resx">
+      <DependentUpon>frmWrittenTestAppointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tests\frmTakeTest.resx">
       <DependentUpon>frmTakeTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tests\frmTakeWrittenTest.resx">
+      <DependentUpon>frmTakeWrittenTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestTypes\frmManageTestTypes.resx">
       <DependentUpon>frmManageTestTypes.cs</DependentUpon>
@@ -304,7 +331,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="TestAppointments\Written\" />
+    <Folder Include="TestAppointments\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

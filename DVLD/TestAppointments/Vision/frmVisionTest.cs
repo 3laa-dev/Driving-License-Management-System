@@ -77,7 +77,7 @@ namespace DVLD.Tests
         }
 
         private void refresh() {
-            // dataGridView1.DataSource = clsTestAppointment.GetTestAppointments(_application.LocalDrivingLicenseApplicationID, 1);
+          
             frmVisionTest_Load(null, null);
 
 
